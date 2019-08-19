@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio - MUJI 온라인스토어 모바일</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link type="text/css" rel="stylesheet" href="inc/css/style.css">
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+<script src="inc/js/common.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub03_order">
+  <!-- 헤더 -->
+  <div class="header_wrapper">
+    <div class="header_promo">의복잡화 가격인하 전 품목 추가 20% OFF</div>
+    <div class="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="./img/common/logo.png" alt="무인양품 로고"/></a>
+      </h1>
+      <button type="button" class="gototop">BACK TO TOP</button>
+      <button type="button" class="menu_btn"></button>
+      <!-- 메뉴 -->
+      <div class="menu">
+        <div class="menu_top">
+          <div class="search">
+            <span class="search_icon"></span>
+            <div class="searchbox_wrapper">
+              <input id="searchbox" type="text"/>
+              <label for="searchbox">검색어를 입력해주세요.</label>
+            </div>
+          </div>
+          <button class="btn_close"></button>
+        </div>
+        <div class="menu_list">
+          <div class="menu_left">
+            <ul class="menu_left_01">
+              <li class="menu_01"><a class="active" href="javascript:void(0);">의류/신발/패션잡화</a></li>
+              <li class="menu_02"><a href="javascript:void(0);">식품</a></li>
+              <li class="menu_03"><a href="javascript:void(0);">생활잡화</a></li>
+              <li class="menu_04"><a href="javascript:void(0);">MUJI 특별기획</a></li>
+              <li class="menu_05"><a href="javascript:void(0);">할인매장</a></li>
+              <li class="menu_06"><a href="javascript:void(0);">컨텐츠/특집</a></li>
+            </ul>
+            <ul class="menu_left_02">
+              <li><a href="javascript:void(0);">HOME</a></li>
+              <li><a href="javascript:void(0);">마이페이지</a></li>
+              <li><a href="javascript:void(0);">About MUJI</a></li>
+              <li><a href="javascript:void(0);">매장정보</a></li>
+            </ul>
+          </div>
+          <div class="menu_right">
+            <ul class="menu_sub_01">
+              <li><a href="javascript:void(0);">유니섹스 LABO</a></li>
+              <li><a href="javascript:void(0);">남성·여성 LABO</a></li>
+              <li><a href="javascript:void(0);">남성복</a></li>
+              <li><a href="javascript:void(0);">여성복</a></li>
+              <li><a href="javascript:void(0);">아동복·마터니티</a></li>
+              <li><a href="javascript:void(0);">이너웨어</a></li>
+              <li><a href="javascript:void(0);">가방·신발</a></li>
+              <li><a href="javascript:void(0);">악세사리·양말·우산</a></li>
+            </ul>
+            <ul class="menu_sub_02">
+              <li><a href="javascript:void(0);">과자·음료·소스</a></li>
+            </ul>
+            <ul class="menu_sub_03">
+              <li><a href="javascript:void(0);">패브릭</a></li>
+              <li><a href="javascript:void(0);">가구·인테리어</a></li>
+              <li><a href="javascript:void(0);">주방·생활용품</a></li>
+              <li><a href="javascript:void(0);">헬스뷰티·아로마</a></li>
+              <li><a href="javascript:void(0);">화장품</a></li>
+              <li><a href="javascript:void(0);">전자제품·기프트</a></li>
+              <li><a href="javascript:void(0);">문구</a></li>
+            </ul>
+            <ul class="menu_sub_04">
+              <li><a href="javascript:void(0);">인기상품</a></li>
+              <li><a href="javascript:void(0);">신상품</a></li>
+            </ul>
+            <ul class="menu_sub_05">
+              <li><a href="javascript:void(0);">가격인하</a></li>
+              <li><a href="javascript:void(0);">의류잡화 아울렛</a></li>
+              <li><a href="javascript:void(0);">생활잡화 아울렛</a></li>
+            </ul>
+            <ul class="menu_sub_06">
+              <li><a href="javascript:void(0);">컨텐츠특집</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //메뉴 -->
+      <button class="bag"></button>
+    </div>
+  </div>
+  <!-- //헤더 -->
+  <!-- 컨테이너 -->
+  <div class="container">
+    <div class="page_title">
+      <h2>주문서작성</h2>
+      <h3>배송/결제 정보를 정확히 입력해주세요</h3>
+    </div>
+    <!-- 주문 상품 정보 -->
+    <div class="order_info ordereditem_info">
+      <h4>주문상품</h4>
+      <span class="ordered_pic"></span>
+      <div class="ordered_item">
+        <p class="product_title">오가닉 보들보들한 타월</p>
+        <p class="product_price">33,900원</p>
+        <dl>
+          <dt>사이즈</dt>
+          <dd>M</dd>
+          <dt>컬러</dt>
+          <dd>아이보리</dd>
+          <dt>수량</dt>
+          <dd>1</dd>
+        </dl>
+      </div>
+      <div class="price_info">
+        <dl>
+          <dt>총 상품금액</dt>
+          <dd>33,900원</dd>
+        </dl>
+        <dl>
+          <dt>배송비</dt>
+          <dd>2,500원</dd>
+        </dl>
+        <dl>
+          <dt>총 할인금액</dt>
+          <dd>-0원</dd>
+        </dl>
+      </div>
+      <div class="total_price">
+        <dl>
+          <dt>총 결제금액</dt>
+          <dd>36,400원</dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //주문 상품 정보 -->
+    <!-- 주문내역 -->
+    <div class="order_info">
+      <h4>주문하시는 분</h4>
+      <!-- 이름 -->
+      <div class="form">
+        <span class="form_item">이름</span>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+        </div>
+      </div>
+      <!-- //이름 -->
+      <!-- 연락처 -->
+      <div class="form">
+        <span class="form_item">연락처</span>
+        <div class="input_wrapper">
+          <div class="selectbox">
+            <select>
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="017">017</option>
+              <option value="018">018</option>
+              <option value="019">019</option>
+              <option value="070">070</option>
+            </select>
+          </div>
+          <div class="character">-</div>
+          <div><input type="text"/></div>
+          <div class="character">-</div>
+          <div><input type="text"/></div>
+        </div>
+      </div>
+      <!-- //연락처 -->
+      <!-- 이메일 -->
+      <div class="form">
+        <span class="form_item">이메일</span>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+          <div class="character">@</div>
+          <div><input class="input input_email" type="text"/></div>
+          <div class="select_email selectbox">
+            <select>
+              <option value="직접입력">직접입력</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="naver.com">naver.com</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="nate.com">nate.com</option>
+              <option value="yahoo.co.kr">yahoo.co.kr</option>
+              <option value="hotmail.com">hotmail.com</option>
+              <option value="empal.com">empal.com</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- //이메일 -->
+      <h4>배송지 정보</h4>
+      <!-- 받으시는 분 -->
+      <div class="form">
+        <span class="form_item">받으시는 분</span>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+        </div>
+      </div>
+      <!-- // 받으시는 분 -->
+      <!-- 받으시는 분 연락처 -->
+      <div class="form">
+        <span class="form_item">연락처</span>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+          <div class="character">-</div>
+          <div><input type="text"/></div>
+          <div class="character">-</div>
+          <div><input type="text"/></div>
+        </div>
+      </div>
+      <!-- //받으시는 분 연락처 -->
+      <!-- 배송 주소 -->
+      <div class="form">
+        <span class="form_item">배송지 주소</span>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+          <div class="search_address"><button>주소 찾기</button></div>
+        </div>
+        <div class="input_wrapper">
+          <div><input type="text"/></div>
+        </div>
+      </div>
+      <!-- //배송 주소 -->
+      <!-- 배송 메시지 -->
+      <div class="form">
+        <span class="form_item">배송 메시지</span>
+        <div class="input_wrapper">
+          <div class="textarea_wrapper">
+            <textarea id="input_textarea" class="delivery_msg"></textarea>
+            <label for="input_textarea">배송 시 요청사항을 20자 이내로 입력해주세요.</label>
+          </div>
+        </div>
+      </div>
+      <!-- //배송 메시지 -->
+      <!-- 결제 정보 -->
+      <h4>결제정보 선택</h4>
+      <div class="form">
+        <ul class="tabs radiobtn_wrapper howtopay">
+          <li rel="tab1" class="tab_active">
+            <input checked="checked" id="howtopay_01" type="radio" name="radiobtn"/>
+            <label for="howtopay_01">무통장입금</label>
+          </li>
+          <li rel="tab2">
+            <input id="howtopay_02" type="radio" name="radiobtn"/>
+            <label for="howtopay_02">신용카드</label>
+          </li>
+          <li rel="tab3">
+            <input id="howtopay_03" type="radio" name="radiobtn"/>
+            <label for="howtopay_03">휴대폰결제</label>
+          </li>
+        </ul>
+        <div class="tab_container box_howtopay">
+          <div id="tab1" class="tab_content">
+            <div class="form">
+              <span class="form_item form_pay">[은행선택]</span>
+              <div class="input_wrapper">
+                <div>
+                  <select>
+                    <option value="우리은행">은행선택</option>
+                    <option value="우리은행">우리은행</option>
+                    <option value="NH농협">NH농협</option>
+                    <option value="국민은행">국민은행</option>
+                    <option value="신한은행">신한은행</option>
+                    <option value="IBK기업">IBK기업</option>
+                    <option value="KEB하나">KEB하나</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form">
+              <span class="form_item form_pay">[입금자명]</span>
+              <div class="input_wrapper">
+                <div><input type="text"/></div>
+              </div>
+            </div>
+            <div class="form">
+              <span class="form_item form_pay">[현금영수증 발급]</span>
+              <ul class="radiobtn_wrapper cashreceipt_btn">
+                <li>
+                  <input id="cashreceipt_01" type="radio" name="cashreceipt"/>
+                  <label for="cashreceipt_01">소득공제용(개인)</label>
+                  <div class="receipt_number">
+                    <div class="input_wrapper">
+                      <div class="selectbox">
+                        <select>
+                          <option value="010">010</option>
+                          <option value="011">011</option>
+                          <option value="017">017</option>
+                          <option value="018">018</option>
+                          <option value="019">019</option>
+                          <option value="070">070</option>
+                        </select>
+                      </div>
+                      <div class="character">-</div>
+                      <div><input type="text"/></div>
+                      <div class="character">-</div>
+                      <div><input type="text"/></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input id="cashreceipt_02" type="radio" name="cashreceipt" >
+                  <label for="cashreceipt_02">지출증빙용(사업자)</label>
+                  <div class="receipt_number">
+                    <div class="input_wrapper">
+                      <div><input type="text"/></div>
+                      <div class="character">-</div>
+                      <div><input type="text"/></div>
+                      <div class="character">-</div>
+                      <div><input type="text"/></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input checked="checked" id="no_cashreceipt" type="radio" name="cashreceipt"/>
+                  <label for="no_cashreceipt">신청안함</label>
+                  <div class="receipt_number receipt_active">
+                    <div class="input_wrapper"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <dl class="pay_info">
+              <dt>[가상계좌 안내]</dt>
+              <dd>무지 온라인 스토어는 농협, 국민, 우리, 신한, 우체국, 기업, 시티은행에서 고객님만의 고유한 전용계좌를 발급해 드립니다</dd>
+            </dl>
+            <dl class="pay_info">
+              <dt>[무통장입금 이용시 주의사항]</dt>
+              <dd>입금계좌번호와 입금예정금액이 주문내역과 일치하지 않을 경우, 입금이 불가하며, 주문일 기준으로 다음날까지 입금확인이 되지 않은 경우 주문이 취소됩니다.
+              (토,일,공휴일 제외/ 취소 전 안내메일발송)</dd>
+              <dd>입금시 은행에서 발생되는 송금수수료는 고객님 부담입니다.</dd>
+            </dl>
+            <dl class="pay_info">
+              <dt>[현금영수증 안내]</dt>
+              <dd>정보통신망 이용촉진 및 정보보호 등에 관한 법률 개정으로 인해 2012년 8월 18일부터 주민등록번호 사용이 제한됩니다</dd>
+            </dl>
+          </div>
+          <div id="tab2" class="tab_content">
+            <div class="form">
+              <span class="form_item form_pay">[카드종류]</span>
+              <div class="input_wrapper">
+                <div>
+                  <select>
+                    <option value="카드선택">카드선택</option>
+                    <option value="011">롯데카드</option>
+                    <option value="017">신한카드</option>
+                    <option value="018">국민카드</option>
+                    <option value="019">비씨카드</option>
+                    <option value="070">삼성카드</option>
+                    <option value="070">우리카드</option>
+                    <option value="070">현대카드</option>
+                    <option value="070">카카오뱅크</option>
+                    <option value="070">삼성카드</option>
+                    <option value="070">삼성카드</option>
+                    <option value="070">삼성카드</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form">
+              <span class="form_item form_pay">[할부선택]</span>
+              <ul class="radiobtn_wrapper">
+                <li>
+                  <input checked="checked" id="lumpsum" type="radio" name="installmentbtn"/>
+                  <label for="lumpsum">일시불</label>
+                </li>
+                <li>
+                  <input id="installment_01" type="radio" name="installmentbtn"/>
+                  <label for="installment_01">무이자할부</label>
+                </li>
+                <li>
+                  <input id="installment_02" type="radio" name="installmentbtn"/>
+                  <label for="installment_02">일반할부</label>
+                </li>
+              </ul>
+              <div class="howmanymonths_01">
+                <span class="form_item form_pay">[무이자할부 기간]</span>
+                <div class="input_wrapper">
+                  <div>
+                    <select>
+                      <option value="선택">무이자할부 기간 선택</option>
+                      <option value="2개월">2개월</option>
+                      <option value="3개월">3개월</option>
+                      <option value="4개월">4개월</option>
+                      <option value="5개월">5개월</option>
+                      <option value="6개월">6개월</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="howmanymonths_02">
+                <span class="form_item form_pay">[일반할부 기간]</span>
+                <div class="input_wrapper">
+                  <div>
+                    <select>
+                      <option value="선택">일반할부 기간 선택</option>
+                      <option value="2개월">7개월</option>
+                      <option value="3개월">8개월</option>
+                      <option value="4개월">9개월</option>
+                      <option value="5개월">10개월</option>
+                      <option value="6개월">11개월</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <dl class="pay_info">
+              <dt>[공인인증/신용카드 인증서비스 안내]</dt>
+              <dd>30만원 이상 결제시 신용카드용 공인인증서가 필요합니다</dd>
+            </dl>
+            <dl class="pay_info">
+              <dt>[증빙발급안내]</dt>
+              <dd>부가세법 시행령에 따라 신용카드영수증으로 부가세신고가 가능합니다(세금계산서 미발급)</dd>
+            </dl>
+          </div>
+          <div id="tab3" class="tab_content">
+            <p>[결제하기] 버튼을 클릭시, 휴대폰 결제 화면으로 연결되어 결제정보를 입력하실 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <!-- //결제 정보 -->
+    </div>
+    <!-- //주문내역 -->
+    <button class="btn_pay">결제하기</button>
+    <p class="order_notice">- 신용카드로 결제하시는 최종 결제금액이 위의 기준금액 미만이거나,
+    그 외 무이자할부가 되지 않는 기타 신용카드를 사용하시는 경우는 일반할부로 결제되오니 반드시 참고하시기 바랍니다.</p>
+    <p class="order_notice">- 미성년자 주문시, 법정대리인이 계약에 동의하지 않으면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있습니다.</p>
+  </div>
+  <!-- // 컨테이너 -->
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_top">
+      <p><a href="#">About MUJI</a><span class="footer_bar"></span></p>
+      <p><a href="#">고객센터</a><span class="footer_bar"></span></p>
+      <p><a href="#">주문/배송</a><span class="footer_bar"></span></p>
+      <p><a href="#">PC버전</a></p>
+    </div>
+    <div class="footer_bottom">
+      <ul class="footer_link">
+        <li><a href="javascript:void(0);">이용약관<span class="footer_link_bar"></span></a></li>
+        <li><a href="javascript:void(0);">개인정보 처리방침<span class="footer_link_bar"></span></a></li>
+        <li><a href="javascript:void(0);">청소년보호방침</a></li>
+      </ul>
+      <p>롯데쇼핑 주식회사 대표이사 : 강희태</p>
+      <p>서울특별시 송파구 올림픽로 300 롯데월드타워 26층<p>
+      <p>사업자등록번호 : 529-85-00774 (롯데쇼핑(주) e커머스 사업본부)</p>
+      <p>통신판매업 신고 : 2019-서울송파-0158</p>
+      <p class="copy">Copyright ©LOTTE SHOPPING Co., Ltd.<br/>e-commerce business division All rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- //푸터 -->
+</div>
+<script>
+// 메일 계정을 <select/> 로 선택할 수 있게
+var $ea = {
+  field: $( ".input_email" ),
+  select: $( ".select_email select" )
+};
+$ea.select.on( "change", function() {
+  mailAccountSelect();
+});
+$ea.field.on( "focus", function() {
+  mailAccountCustomInput();
+});
+// 셀렉트 박스를 선택할 때
+function mailAccountSelect() {
+  var selected = $ea.select.val();
+
+  // 프리셋을 선택하면 그 값을 input에 반영
+  if ( selected != "custom" ) {
+  $ea.field.val( selected );
+  }
+  // 직접입력을 선택하면 input을 비우고 포커스
+  else {
+  $ea.field.val( "" ).focus();
+  }
+}
+// 직접입력할 때
+function mailAccountCustomInput() {
+// 셀렉트 박스를 `직접입력`으로 선택
+  $ea.select.val( "custom" );
+}
+// 소득공제 신청 탭
+$(".cashreceipt_btn li").click(function(){
+  $(".receipt_number").removeClass("receipt_active")
+  $(this).find('.receipt_number').addClass("receipt_active")
+});
+
+// 할부 개월수 선택
+$("#installment_01").click(function(){
+  $(".howmanymonths_01").addClass("howmanymonths_active");
+});
+$("#installment_02, #lumpsum").click(function(){
+  $(".howmanymonths_01").removeClass("howmanymonths_active");
+});
+$("#installment_02").click(function(){
+  $(".howmanymonths_02").addClass("howmanymonths_active");
+});
+$("#installment_01, #lumpsum").click(function(){
+  $(".howmanymonths_02").removeClass("howmanymonths_active");
+});
+</script>
+</body>
+</html>

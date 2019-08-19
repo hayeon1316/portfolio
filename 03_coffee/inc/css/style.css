@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url('index.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+/* main */
+#wrap{position: relative; font-family: 'Lato', sans-serif;}
+.header{position: absolute; width: 100%; height: 100px; z-index: 1;}
+.logo{position: absolute; left: 80px; top: 40px;}
+.logo a{font-size: 26px; color: #fff; font-weight: 700;}
+.logo a:hover{color: #ebd4bd;}
+#menu{position: absolute; right: 80px; top: 45px; font-size: 16px; letter-spacing: .6px;}
+#menu li{float: left; margin-right: 50px;}
+#menu li:last-child{margin-right: 0;}
+#menu li a span.underline{display: inline-block; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #ebd4bd; transition: all .3s ease-in-out;}
+#menu li.active span.underline{width: 100%; transition: all .3s ease-in-out;}
+#menu li a:hover{color: #ebd4bd;}
+#menu li a{display:block; position: relative; padding-bottom: 10px; color: #fff;}
+#menu li.active a{color: #ebd4bd;}
+.section{padding: 0 80px;}
+#section0{position: relative; background: url(../img/bg_07.png) no-repeat center; background-size: cover;}
+#section1{position: relative; background: url(../img/bg_08.png) no-repeat center; background-size: cover;}
+#section2{position: relative; background: url(../img/bg_03.png) no-repeat center; background-size: cover;}
+#section3{position: relative; background: url(../img/bg_06.png) no-repeat center; background-size: cover;}
+#section4{position: relative; background: url(../img/bg_05.png) no-repeat center; background-size: cover;}
+/* Section 0 - About us */
+#section0 .small_text{line-height: 34px; font-weight: 300; margin-bottom: 20px;}
+.goodcoffee{display: inline-block; position: relative; color: #ebd5bd; border-bottom: 2px solid #ebd5bd; z-index: 1;}
+.bar{display: block; position: absolute; left: 0; top: 20px; width: 0; height: 36px; background: #745443; z-index: -1; transition: all .3s ease-in-out;}
+.goodcoffee:hover .bar{width: 100%; transition: all .3s ease-in-out;}
+h2.text_L{width: 870px; font-weight: 700; font-style: italic; font-size: 50px; line-height: 65px; color: #ebd5bd;}
+/* Section 1 - Our goal */
+.page_title{position: absolute; width: 410px; left: 80px; top: 50%; transform: translateY(-50%);}
+.page_title h3{display: inline-block; font-size: 60px; line-height: 62px; font-weight: 700; color: #c5a78f; margin-bottom: 30px;}
+.page_title h3:after{content: ''; display: block; width: 110px; padding-bottom: 30px; border-bottom: 4px solid #c5a78f;}
+.page_title p{font-size: 18px; font-weight: 100; line-height: 28px; font-style: italic; color: #ebd5bd; letter-spacing: .6px;}
+.content{position: absolute; width: calc(100% - 410px); left: 600px; top: 50%; transform: translateY(-45%);}
+.goals{overflow: hidden;}
+.goals li{float: left; width: 50%; padding: 0 90px 100px 0;}
+.goals li:nth-child(3), .goals li:nth-child(4){padding-bottom: 0;}
+.goals li h5{font-size: 28px; line-height: 38px; font-weight: 700; letter-spacing: 1.5px; color: #ebd5bd; margin-bottom: 15px;}
+.goals li p{font-size: 20px; font-weight: 300; letter-spacing: .6px; line-height: 30px; color: #fff;}
+.small_text{display: block; font-size: 14px; font-weight: 100; letter-spacing: 4px; color: #fff; margin-bottom: 20px;}
+.line{display: block; width: 40px; height: 2px; background: #ebd5bd; margin-bottom: 25px;}
+/* Section 2 - Coffee beans */
+.beans_products .bx-wrapper{background: none; box-shadow: none; border: none; margin-bottom: 0;}
+.beans_slider li{width: 320px; height: 320px; border: 1px solid #c3ad9a;}
+.beans_slider li.bean_01{background: rgba(40,36,37,0.5) url(../img/bean_01.png) no-repeat center; background-size: cover;}
+.beans_slider li.bean_02{background: rgba(40,36,37,0.5) url(../img/bean_04.png) no-repeat center; background-size: cover;}
+.beans_slider li.bean_03{background: rgba(40,36,37,0.5) url(../img/bean_03.png) no-repeat center; background-size: cover;}
+.beans_slider li.bean_04{background: rgba(40,36,37,0.5) url(../img/bean_05.png) no-repeat center; background-size: cover;}
+.beans_slider li.bean_05{background: rgba(40,36,37,0.5) url(../img/bean_02.png) no-repeat center; background-size: cover;}
+.beans_slider li a{display: block; height: 100%; padding-top: 84px; text-align: center;}
+.beans_slider li a p{display: none; color: #ead4bc}
+.beans_slider li a:hover{background: rgba(40,36,37,0.7);}
+.beans_slider li a:hover p{display: block;}
+.beans_slider li a:hover p.price{display: inline-block;;}
+.beans_products .bx-wrapper .bx-controls-direction a{top: -40px;}
+.beans_products .bx-wrapper .bx-controls-direction a.bx-prev{left: 0; background: url(../img/btn_prev.svg) no-repeat center;}
+.beans_products .bx-wrapper .bx-controls-direction a.bx-next{left: 40px; background: url(../img/btn_next.svg) no-repeat center;}
+.bean_name{font-size: 18px; font-weight: 400; color: #fff;}
+.gram{font-size: 18px; margin-top: 3px; font-weight: 300; letter-spacing: 1px;}
+.price{display: inline-block; font-size: 20px; font-weight: 400; margin-top: 15px; line-height: 1;}
+.price:before{display: block; content: ''; width: 200%; transform: translateX(-25%); margin-bottom: 10px; border-top: 2px solid #ead4bc;}
+.beans_slider li a p.btn_seemore{width: 130px; margin: 30px auto 0; font-size: 14px; font-weight: 300; line-height: 1; padding: 6px 0; border: 1px solid #fff; color: #fff; font-weight: 300; letter-spacing: 1px;}
+/* Section 3 - Journal */
+.journal .bx-wrapper{background: none; box-shadow: none; border: none; margin-bottom: 0;}
+.journal_slider{}
+.journal_slider li{height: 600px; position: relative;}
+.journal_pic{position: absolute; left: 0; width: 580px; height: 580px; top: 50%; transform: translateY(-50%);}
+.journal_pic img{width: 100%;}
+.journal_text{position: absolute; left: 580px; top: 50%; transform: translateY(-50%); width: 45%; padding: 0 80px 0 50px;}
+.journal_text h3{font-size: 28px; line-height: 38px; font-weight: 700; letter-spacing: .8px; color: #ebd5bd; margin-bottom: 15px;}
+.journal_text h3:after{width: 60%; content: ''; display: block; padding-top: 30px; border-bottom: 2px solid #ebd5bd; margin-left: -30%;}
+.journal_text p{font-size: 20px; line-height: 30px; color: #fff; font-weight: 300; margin-top: 40px;}
+.journal_text p.readmore a{display: inline-block; padding: 6px 12px; color: #fff; border: 1px solid #fff; font-size: 14px; line-height: 1; letter-spacing: .8px; margin-top: 50px;}
+.journal_text p.readmore a:hover{color: #ebd5bd; border: 1px solid #ebd5bd;}
+.journal .bx-wrapper .bx-controls-direction a{top: -30px;}
+.journal .bx-wrapper .bx-controls-direction a.bx-prev{left: 0; background: url(../img/btn_prev.svg) no-repeat center;}
+.journal .bx-wrapper .bx-controls-direction a.bx-next{left: 40px; background: url(../img/btn_next.svg) no-repeat center;}
+/* Section 4 - Location */
+#section4 .content{width: calc(100% - 680px);}
+.mapouter{text-align:right; height:600px;width:100%;}
+.gmap_canvas{overflow:hidden;background:none!important;height:100%;width:100%;}
+.gmap_canvas iframe{width: 100%; height: 100%;}
+/* Popup */
+iframe{border: none;}
+#wrap_popup{background: #272425;}
+#wrap_popup .container{width: 1200px; margin: 0 auto; padding: 200px 0;}
+.container_top{overflow: hidden; position: relative; margin: 0 0 160px;}
+.popup_img{float: left; width: 580px; height: 580px;}
+.popup_img img{width: 100%;}
+.popup_title{position: absolute; width: 580px; left: 620px; top: 50%; transform: translateY(-50%);}
+.popup_title h3{font-size: 60px; font-weight: 900; color: #8e7467; margin: 15px 0; line-height: 68px; font-style: italic;}
+.popup_title h3:after{content: ''; display: block; border-bottom: 4px solid #8e7467; width: 180px; margin: 30px 0;}
+.popup_title p{font-size: 30px; font-weight: 100; line-height: 50px; color: #ead4bc;}
+.container_bottom{}
+.container_bottom h4{display: inline-block; font-size: 44px; color: #8e7467; font-weight: 700; padding-bottom: 5px; margin-bottom: 30px; border-bottom: 3px solid #8e7467; font-style: italic;}
+.container_bottom p{color: #ead4bc; font-size: 20px; line-height: 38px; font-weight: 100; margin-bottom: 20px; letter-spacing: .6px;}
+.container_bottom h5{font-size: 40px; line-height: 56px; color: #8e7467; font-weight: 300; font-style: italic; margin: 100px 0 70px;}
+.container_bottom h5 span{border-bottom: 2px solid #8e7467; font-weight: 400;}
+.cont{overflow: hidden; margin-top: 100px; }
+.cont_img{display: block; width: 100%; height: 800px; background: url(../img/popup_img_2.jpg)no-repeat center; background-size: cover;}
+.popup_text{float: left; width: 680px; margin-right: 60px;}
+.container_bottom p.popup_text_s{font-size: 16px; line-height: 1; margin-bottom: 14px;}
+.container_bottom p.popup_text_s:before{content: ''; display: inline-block; width: 10px; height: 1px; background: #8e7467; margin-right: 10px; margin-top: -2px; vertical-align: middle;}
+.popup_text ul{color: #ead4bc; font-size: 20px; line-height: 38px; font-weight: 100; margin: 35px 0 20px; letter-spacing: .6px;}
+.popup_text ul li{position: relative; padding-left: 20px; }
+.popup_text ul li span{position: absolute; left: 0; width: 20px;}
+.cont_img_2{float: left; display: block; width: 460px; height: 560px; background: url(../img/popup_img.jpg) no-repeat center; background-size: cover;}
+.iframe_wrapper{position: absolute; left: 0; top: 0; z-index: 9999;}
+.iframe_journal{width: 100vw; height: 100vh;}
+.popup_page{position: relative; }
+.close{display: block; position: absolute; width: 40px; height: 40px; right: 70px; top: 60px;}
+/* Popup 02 Added*/
+.popup_02 .container_bottom h5{margin: 80px 0 30px;}
+.popup_02 .cont_img{display: block; width: 100%; height: 800px; background: url(../img/popup_img_3.jpg)no-repeat center; background-size: cover;}
+.cont_img_3, .cont_img_4{float: left; display: block; width: 580px; height: 800px; margin-top: 80px;}
+.cont_img_3{margin-right: 40px; background: url(../img/popup_img_4.png)no-repeat center; background-size: cover;}
+.cont_img_4{background: url(../img/popup_img_5.png)no-repeat center; background-size: cover;}
+/* Popup - Coffee bean information */
+.iframe_bean{width: 100vw; height: 100vh;}
+.popup_bean .container{overflow: hidden; width: 1200px; margin: 0 auto; padding: 120px 0; text-align: center;}
+.bean_product{display: inline-block; width: 400px; margin-right: 40px; vertical-align: middle;}
+.bean_product img{width: 100%;}
+.bean_info{display: inline-block; width: 500px; text-align: left; vertical-align: middle;}
+.bean_info h3{font-size: 80px; line-height: 82px; font-weight: 700; color: #ebd4bd; border-bottom: 4px solid #ebd4bd; padding-bottom: 5px;}
+.bean_info h4{font-size: 32px; color: #ebd4bd; font-weight: 300; line-height: 42px; margin: 20px 0;}
+.bean_price{font-size: 18px; letter-spacing: .8px; font-weight: 400; padding: 20px 0; border-top: 1px solid #8e7467; border-bottom: 1px solid #8e7467; color: #8e7467;}
+.bean_price div{margin: 2px 0;}
+.bean_price div span.grams{display: inline-block;}
+.bean_price div span.grams:after{content: ''; display: inline-block; width: 10px; height: 1px; background: #8e7467; margin: -2px 20px 0; vertical-align: middle;}
+.bean_story{margin-top: 150px;}
+.bar_story{display: block; color: #ebd4bd; font-size: 14px; font-weight: 100; letter-spacing: 1.8px; border-bottom: 1px solid #ebd4bd; padding-bottom: 10px; margin-bottom: 18px; text-align: left;}
+.bean_story_pic{overflow: hidden; width: 100%; height: 720px;}
+.bean_story_pic img{width: 100%;}
+.bean_story_text{font-size: 20px; font-weight: 300; line-height: 34px; color: #ebd4bd; margin: 20px 0; text-align: left;}
+/* Slick */
+.slick-prev{left: 10px; width: 50px; z-index: 999;}
+.slick-prev:before{content: ''; display: block; padding-top: 100%; background: url(../img/slick_btn_prev.svg) no-repeat center;}
+.slick-next{right: 10px; width: 50px; z-index: 999;}
+.slick-next:before{content: ''; display: block; padding-top: 100%; background: url(../img/slick_btn_next.svg) no-repeat center;}
+.slick-dots{bottom: 15px;}
+.bean_story_pic .slick-dots li button{width: auto; height: auto;}
+.bean_story_pic .slick-dots li button:before{content: ''; width: 8px; height: 8px; border-radius: 50%; background: #fff; opacity: .6;}
+.bean_story_pic .slick-dots li.slick-active button:before{opacity: 1;}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../inc/css/style.css"/>
+<script src="../inc/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper" class="portfolio">
+  <div class="container">
+    <div class="pf_top">
+      <div class="pf_top_wrapper">
+        <h2>자기소개서 및 포트폴리오 사이트</h2>
+        <div class="pf_top_title"><p class="section_title">포트폴리오 제작 목적 및 기획</p></div>
+        <div class="pf_top_l">
+          <p class="pf_explain">저의 첫 번째 포트폴리오 사이트의 웹 접근성이 다소 부족하다고 판단되어 새로 제작한 포트폴리오 및 자기소개서 사이트입니다.
+            저에 대한 소개와 포트폴리오를 보여주는 것이 주 목적이기 때문에 최대한 간결하고 단순한 구조로 제작해
+            필요한 정보를 습득하는 데에 문제가 없도록 하였습니다.
+            또한 어떠한 디바이스를 통해 접속하더라도 내용을 확인할 수 있도록 미디어 쿼리를 활용해 반응형 웹사이트로 제작되었습니다.
+            최근 SCSS를 학습한 후, 실습 및 활용을 통한 이해가 필요하여 본 사이트 제작에 적용하였고, 필요한 기능들을 구현하기 위해
+            사용된 모든 JavaScript는 직접 작성하였습니다.</p>
+        </div>
+        <div class="pf_top_r">
+          <dl>
+            <dt class="section_title letters3">뷰포트</dt>
+            <dd>반응형</dd>
+          </dl>
+          <dl>
+            <dt class="section_title letters3">기여도</dt>
+            <dd>100% 자가 구축</dd>
+          </dl>
+          <dl>
+            <dt class="section_title">제작기간</dt>
+            <dd class="first_dd">기획 및 디자인 1일</dd>
+            <dd class="second_dd">퍼블리싱 3일</dd>
+          </dl>
+          <dl>
+            <dt class="section_title letters3">키워드</dt>
+            <dd class="first_dd">SCSS 실습</dd>
+            <dd class="second_dd">반응형 웹사이트</dd>
+          </dl>
+          <a href="http://hayeon-kim.com" target="_blank" class="gotoLink">사이트 바로가기</a>
+        </div>
+      </div>
+    </div>
+    <div class="pf_bottom">
+      <span class="portfolio_img portfolio_img_01">
+        <img src="../inc/img/pf_col_01.png" alt="SCSS 실습, 반응형 웹사이트 연습을 위한 포트폴리오의 이미지"/>
+      </span>
+      <div><p class="section_title">파일명을 클릭해 자세히 살펴볼 수 있습니다</p></div>
+      <ul class="links">
+        <li>
+          <span class="category htmlFile">HTML</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/01_portfolio_new/index.html" target="_blank">index.html</a></span>
+          <p>메인 페이지의 html 파일</p>
+        </li>
+        <li>
+          <span class="category cssFile">SCSS</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/01_portfolio_new/inc/css/style.scss" target="_blank">style.scss</a></span>
+          <p>SCSS로 작성된 기본 CSS 파일</p>
+        </li>
+        <li>
+          <span class="category cssFile">SCSS</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/01_portfolio_new/inc/css/_portfolio.scss" target="_blank">_portfolio.scss</a></span>
+          <p>SCSS로 작성된 Portfolio 상세 설명 페이지의 CSS 파일</p>
+        </li>
+        <li>
+          <span class="category jsFile">JS</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/01_portfolio_new/inc/js/common.js" target="_blank">common.js</a></span>
+          <p>모든 페이지에 적용되는 공통 Javascript 파일</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_wrapper">
+      <h2>부족한 점은 학습해 보완하고 더 나은 결과물을 만들 수 있는 팀원으로 성장하겠습니다.</h2>
+      <dl>
+        <dt class="section_title">E-MAIL</dt>
+        <dd><a href="mailto:kimma0514@gmail.com">kimma0514@gmail.com</a></dd>
+        <dt class="section_title">MOBILE</dt>
+        <dd><a href="tel:821043281316">010.4328.1316</a></dd>
+        <dt class="section_title">ADDRESS</dt>
+        <dd><a href="https://www.google.com/maps/dir//37.5487965,126.9134081/@37.5469623,126.9128299,17z/data=!4m2!4m1!3e0">서울시 마포구 합정동</a></dd>
+      </dl>
+    </div>
+  </footer>
+</div>
+<script>
+// footer height값이 innerHeight로 적용되게
+window.onload = window.onresize = function () {
+  var footer = document.getElementsByTagName('footer')[0];
+  footer.style.height = window.innerHeight + "px";
+}
+</script>
+</body>
+</html>

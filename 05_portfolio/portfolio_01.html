@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div id="wrap_pf" class="portfolio_page">
+  <div class="container">
+    <div class="infomation">
+      <div class="informaiton_text">
+        <h3>무인양품 모바일 사이트 리뉴얼</h3>
+        <h4>RENEWAL OF MUJI'S MOBILE WEBSITE</h4>
+        <div class="info_left">
+          <span>ABOUT THIS WORK</span>
+          <p>다양한 모바일 디스플레이 사이즈에 맞춰 잘 구현될 수 있도록 %와 vw, vh, rem 단위를 적극 활용하였습니다. 무인양품의 모바일 사이트를 방문하는 대부분의 고객들이 상품 검색 및 쇼핑을 위해 접근할 것이라 생각했고, 때문에 더 쉬운 상품 탐색을 위해 편의성을 개선하고자 많이 찾게 되는 내비게이션을 상단에 배치하였습니다. 또한 스크롤을 내려도 내비게이션이 상단에 고정되어 언제든 쉽게 상품 카테고리에 접근할 수 있도록 코딩했습니다. 각 서브 페이지에는 Slick.js, Swiper.js 등의 오픈소스를 활용 및 수정하여 다양한 기능을 필요에 맞게 구현하였고, 간단한 기능은 직접 Jquery를 작성했습니다.</p>
+        </div>
+        <div class="info_right">
+          <dl class="dl_viewport">
+            <dt>VIEWPORT</dt>
+            <dd>모바일 전용</dd>
+          </dl>
+          <dl>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </dl>
+          <dl class="dl_period">
+            <dt>제작기간</dt>
+            <dd>기획·디자인 3일</dd>
+            <dd>퍼블리싱 4일</dd>
+          </dl>
+        </div>
+      </div>
+      <ul class="pf_img_mobile">
+        <li><img src="inc/img/portfolio/muji_00_sh.png" alt="포트폴리오 페이지 이미지 1"/></li>
+        <li><img src="inc/img/portfolio/muji_01_sh.png" alt="포트폴리오 페이지 이미지 2"/></li>
+        <li><img src="inc/img/portfolio/muji_02_sh.png" alt="포트폴리오 페이지 이미지 3"/></li>
+        <li><img src="inc/img/portfolio/muji_03_sh.png" alt="포트폴리오 페이지 이미지 4"/></li>
+      </ul>
+    </div>
+    <span class="info_bg"></span>
+  </div>
+  <div class="container_bottom">
+    <p class="page_list_text">HAVE A LOOK AT EVERY PAGE IN DETAIL!</p>
+    <ul class="page_list">
+      <li><a href="http://hayeon-kim.com/portfolio/05" target="_blank">Main Page</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/05/sub_01.html" target="_blank">Sub page 1</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/05/sub_02.html" target="_blank">Sub page 2</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/05/sub_03.html" target="_blank">Sub page 3</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+/* 전체화면 height 값 innerHeight로 */
+window.onresize = function (){
+  var h = window.innerHeight;
+  document.getElementById("wrap_pf").style.height = h+'px';
+  }
+window.onresize();
+</script>
+</body>
+</html>

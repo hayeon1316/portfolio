@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio - MUJI 온라인스토어 모바일</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link type="text/css" rel="stylesheet" href="inc/css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="inc/css/slick.css">
+<link type="text/css" rel="stylesheet" href="inc/css/slick-theme.css">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--상품평 별-->
+<link type="text/css" rel="stylesheet" href="inc/css/style.css">
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+<script src="inc/js/common.js"></script>
+<script src="inc/js/swiper.min.js"></script>
+<script src="inc/js/slick.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub02_product_detail">
+  <!-- 헤더 -->
+  <div class="header_wrapper">
+    <div class="header_promo">의복잡화 가격인하 전 품목 추가 20% OFF</div>
+    <div class="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="./img/common/logo.png" alt="무인양품 로고"/></a>
+      </h1>
+      <button type="button" class="gototop">BACK TO TOP</button>
+      <button type="button" class="menu_btn"></button>
+      <!-- 메뉴 -->
+      <div class="menu">
+        <div class="menu_top">
+          <div class="search">
+            <span class="search_icon"></span>
+            <div class="searchbox_wrapper">
+              <input id="searchbox" type="text"/>
+              <label for="searchbox">검색어를 입력해주세요.</label>
+            </div>
+          </div>
+          <button class="btn_close"></button>
+        </div>
+        <div class="menu_list">
+          <div class="menu_left">
+            <ul class="menu_left_01">
+              <li class="menu_01"><a class="active" href="javascript:void(0);">의류/신발/패션잡화</a></li>
+              <li class="menu_02"><a href="javascript:void(0);">식품</a></li>
+              <li class="menu_03"><a href="javascript:void(0);">생활잡화</a></li>
+              <li class="menu_04"><a href="javascript:void(0);">MUJI 특별기획</a></li>
+              <li class="menu_05"><a href="javascript:void(0);">할인매장</a></li>
+              <li class="menu_06"><a href="javascript:void(0);">컨텐츠/특집</a></li>
+            </ul>
+            <ul class="menu_left_02">
+              <li><a href="javascript:void(0);">HOME</a></li>
+              <li><a href="javascript:void(0);">마이페이지</a></li>
+              <li><a href="javascript:void(0);">About MUJI</a></li>
+              <li><a href="javascript:void(0);">매장정보</a></li>
+            </ul>
+          </div>
+          <div class="menu_right">
+            <ul class="menu_sub_01">
+              <li><a href="javascript:void(0);">유니섹스 LABO</a></li>
+              <li><a href="javascript:void(0);">남성·여성 LABO</a></li>
+              <li><a href="javascript:void(0);">남성복</a></li>
+              <li><a href="javascript:void(0);">여성복</a></li>
+              <li><a href="javascript:void(0);">아동복·마터니티</a></li>
+              <li><a href="javascript:void(0);">이너웨어</a></li>
+              <li><a href="javascript:void(0);">가방·신발</a></li>
+              <li><a href="javascript:void(0);">악세사리·양말·우산</a></li>
+            </ul>
+            <ul class="menu_sub_02">
+              <li><a href="javascript:void(0);">과자·음료·소스</a></li>
+            </ul>
+            <ul class="menu_sub_03">
+              <li><a href="javascript:void(0);">패브릭</a></li>
+              <li><a href="javascript:void(0);">가구·인테리어</a></li>
+              <li><a href="javascript:void(0);">주방·생활용품</a></li>
+              <li><a href="javascript:void(0);">헬스뷰티·아로마</a></li>
+              <li><a href="javascript:void(0);">화장품</a></li>
+              <li><a href="javascript:void(0);">전자제품·기프트</a></li>
+              <li><a href="javascript:void(0);">문구</a></li>
+            </ul>
+            <ul class="menu_sub_04">
+              <li><a href="javascript:void(0);">인기상품</a></li>
+              <li><a href="javascript:void(0);">신상품</a></li>
+            </ul>
+            <ul class="menu_sub_05">
+              <li><a href="javascript:void(0);">가격인하</a></li>
+              <li><a href="javascript:void(0);">의류잡화 아울렛</a></li>
+              <li><a href="javascript:void(0);">생활잡화 아울렛</a></li>
+            </ul>
+            <ul class="menu_sub_06">
+              <li><a href="javascript:void(0);">컨텐츠특집</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //메뉴 -->
+      <button class="bag"></button>
+    </div>
+  </div>
+  <!-- //헤더 -->
+  <!-- 컨테이너 -->
+  <div class="container">
+    <div class="product_detail">
+      <!-- 상품 상세이미지 Slick -->
+      <div class="slick_sub02 slider">
+        <div class="slider_list">
+          <img src="./img/common/product_detail_01.png" alt="오가닉 보들보들타월 상세이미지"/>
+        </div>
+        <div class="slider_list">
+          <img src="./img/common/product_detail_02.png" alt="오가닉 보들보들타월 아이보리"/>
+        </div>
+        <div class="slider_list">
+          <img src="./img/common/product_detail_03.png" alt="오가닉 보들보들타월 블루"/>
+        </div>
+        <div class="slider_list">
+          <img src="./img/common/product_detail_04.png" alt="오가닉 보들보들타월 라이트블루 체크"/>
+        </div>
+        <div class="slider_list">
+          <img src="./img/common/product_detail_05.png" alt="오가닉 보들보들타월 질감"/>
+        </div>
+      </div>
+      <!-- //상품 상세이미지 Slick -->
+      <!-- 상품 설명 및 옵션 선택 -->
+      <div class="product_detail_text">
+        <p class="product_title">오가닉 보들보들한 타월</p>
+        <p class="product_price">33,900원</p>
+      </div>
+      <div class="choose_section">
+        <dl class="product_color">
+          <dt class="product_color_dt">색상</dt>
+          <dd>
+            <span class="color_01"><a href="javascript:void(0);"><img src="./img/common/product_color_big_ivory.png" width="28" height="28" alt="아이보리 컬러"/></a></span>
+            <span class="color_02"><a href="javascript:void(0);"><img src="./img/common/product_color_big_blue.png" width="28" height="28" alt="블루 컬러"/></a></span>
+            <span class="color_03"><a href="javascript:void(0);"><img src="./img/common/product_color_big_check.png" width="28" height="28" alt="라이트블루 체크 컬러"/></a></span>
+          </dd>
+        </dl>
+        <dl class="product_size">
+          <dt class="product_size_dt">사이즈</dt>
+          <dd>
+            <span class="size_xs"><a href="javascript:void(0);">XS</a></span>
+            <span class="size_s"><a href="javascript:void(0);">S</a></span>
+            <span class="size_m"><a href="javascript:void(0);">M</a></span>
+            <span class="size_l"><a href="javascript:void(0);">L</a></span>
+            <span class="size_xl"><a href="javascript:void(0);">XL</a></span>
+          </dd>
+        </dl>
+        <div class="btn_addbuy">
+          <button type="button" class="btn_add">장바구니 담기</button>
+          <button type="button" class="btn_buy">바로 구매하기</button>
+        </div>
+      </div>
+      <ul class="tabs">
+        <li class="tab_active" rel="tab1">상품 상세 설명</li>
+        <li rel="tab2">배송/교환/반품 정보</li>
+        <li rel="tab3">상품평</li>
+      </ul>
+      <div class="tab_container">
+        <div id="tab1" class="tab_content">
+          <p>섬유가 긴 면사를 사용한 방직법을 연구하여 부드러움이 지속되는 타월로 완성했습니다. 평소 사용하기 좋은 두께와 흡수량입니다. 제품 관리에 대한 자세한 사항은 <span class="moreinfo"><a href="javascript:void(0);">여기</a></span>를 참고하십시오.</p>
+          <dl class="product_info">
+            <dt>제품소재</dt>
+            <dd>오가닉 코튼 혼방 · 면 100%</dd>
+            <dt>치수</dt>
+            <dd>W34×L35cm</dd>
+            <dt>제조국ㆍ지역</dt>
+            <dd>베트남</dd>
+            <dt>세탁 및<br/>취급 주의사항</dt>
+            <dd>소재의 특성상, 사용 중이나 세탁 중에 보풀이 발생하거나 제품의 섬유가 다른 곳에 붙을 수 있습니다.
+              세탁 시 먼지 제거망을 사용하고 단독 세탁하여 주십시오.
+              새 제품일 경우에는 물이 잘 흡수되지 않을 수 있습니다.
+              사용 전에 물 세탁하여 주시기 바랍니다.
+              사용 초기에 보풀이 빠지기 쉬우므로 피부 등에 부착될 수 있습니다.
+              진한 색상 제품은 사용 중 마찰로 인해 색이 옮겨지는 경우가 있습니다.
+              특히, 땀이나 수분 등으로 젖은 상태에서 사용하면 색이 옮겨지는 경우가 있으므로 주의 바랍니다.
+              세탁이나 클리닝 시, 탈색이나 색 옮김이 발생하는 경우가 있으므로 단독 세탁 바랍니다.
+              소재의 특성상, 섬유유연제 사용 시 털빠짐이 심해질 수 있습니다. 주의 바랍니다.</dd>
+            <dt>품질보증기준</dt>
+            <dd>관련법 및 소비자분쟁해결 기준에 따름</dd>
+          </dl>
+        </div>
+        <div id="tab2" class="tab_content">
+          <p>전국 배송(일부지역제외) 단, 설치배송이 필요한 가구상품은 서울 및 수도권만 배송가능합니다.</p>
+          <dl class="product_info">
+            <dt>배송방식</dt>
+            <dd>MUJIㆍ롯데e커머스의 물류센터를 통해 배송되는 상품은 택배회사를 이용해 택배 배송되며, 그 외 설치 가구상품은 MUJI물류센터의 가구배송 차량으로 고객님과 협의된 배송일에 배송됩니다.</dd>
+            <dt>배송비</dt>
+            <dd>택배배송 일반상품: 3.000원 (3만원이상 구입시 무료배송) /설치가 필요한 가구: 50,000원 (50만원이상 구입시 무료 설치배송)</dd>
+            <dt>배송기간</dt>
+            <dd>일반 택배배송: 결제일 다음날부터 3일이내 발송(토,일 공휴일제외) 산간•도서 지역은 배송기일이 추가적으로 소요 될 수 있으며,상품의 재고상황에 따라 다소 지연될 수도 있습니다. 설치가구 상품배송: 상품에 따라 20일이내에 배송됩니다.</dd>
+            <dd>결제수단이 인터넷뱅킹/무통장입금인 경우 입금확인이 된 후 상품발송을 진행하므로 배송 기간이 다소 늦어질 수 있습니다.</dd>
+            <dt>교환환불안내</dt>
+            <dd>상품 수령 후 7일이내에 상품하자 발생시 교환 및 환불이 가능합니다.</dd>
+            <dd>고객의 단순 변심에 의한 제품의 교환 및 환불은 상품 미훼손 및 사용하지 않은 상태일 경우 가능합니다.단, 배송비는 고객 부담입니다. 제품 조립 후에는 교환 및 환불이 불가합니다.</dd>
+          </dl>
+        </div>
+        <div id="tab3" class="tab_content">
+          <div class="product_review">
+            <span class="review_top">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="namedate">
+                <span class="date">2019.02.18</span>
+                <span class="name">김하연</span>
+              </span>
+            </span>
+            <dl>
+              <dt>부드럽고 좋아요</dt>
+              <dd>보들보들한 타월이라고 해서 주문했는데 정말로 부드러워서 얼굴에 사용하기에도 부담스럽지 않고, 오가닉 코튼이라 피부가 예민한데도 불구하고 쓰기 좋아요.</dd>
+            </dl>
+          </div>
+          <div class="product_review">
+            <span class="review_top">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="namedate">
+                <span class="date">2019.02.16</span>
+                <span class="name">최용현</span>
+              </span>
+            </span>
+            <dl>
+              <dt>마음에 들어요</dt>
+              <dd>평소에 피부에 트러블이 많이나서 수건이 문제인가 싶어서 오가닉 상품 구매했습니다. 좋은 것 같아요.</dd>
+            </dl>
+          </div>
+          <div class="product_review">
+            <span class="review_top">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="namedate">
+                <span class="date">2019.02.01</span>
+                <span class="name">이민주</span>
+              </span>
+            </span>
+            <dl>
+              <dt>정말 보들보들해요</dt>
+              <dd>이름 그대로 보들보들해서 좋아요.</dd>
+            </dl>
+          </div>
+          <div class="product_review">
+            <span class="review_top">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="namedate">
+                <span class="date">2019.01.28</span>
+                <span class="name">쑤기쑤기</span>
+              </span>
+            </span>
+            <dl>
+              <dt>배송도 빠르고 좋네요</dt>
+              <dd>친구 선물하려고 구입했어요. 매장에서 만져보고 부드러운 촉감이 좋아서 구매했는데, 친구도 받아보고는 너무 좋아하고 날짜에 맞게 잘 도착해서 좋습니다. 촉감이 부드러워서 애기들한테 쓰기도 좋을 것 같아요.</dd>
+            </dl>
+          </div>
+          <div class="review_page">
+            <ul>
+              <li><a class="page_active" href="javascript:void(0);">1</a></li>
+              <li><a href="javascript:void(0);">2</a></li>
+              <li><a href="javascript:void(0);">3</a></li>
+              <li><a href="javascript:void(0);">4</a></li>
+              <li><a href="javascript:void(0);">5</a></li>
+            </ul>
+            <a class="nextpage" href="javascript:void(0);"><img src="./img/common/subscription_arrow.svg" width="14" height="6" alt="페이지 더보기 아이콘"/></a>
+          </div>
+        </div>
+      </div>
+      <!-- //상품 설명 및 옵션 선택 -->
+      <!-- 추천상품 스와이퍼 -->
+      <div class="recommendation">
+        <h2 class="title_big">추천상품</h2>
+        <h3 class="title_small">고객님께 추천하는 상품입니다</h3>
+        <div class="product_swiper_inner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_02.png" width="135" height="200" alt="오가닉 서커 침대 패드"/>
+              </a>
+              <p class="product_title">오가닉 서커 침대 패드</p>
+              <p class="product_price">43,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_01.png" width="135" height="200" alt="라탄 박스"/>
+              </a>
+              <p class="product_title">라탄 박스</p>
+              <p class="product_price">49,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_03.png" width="135" height="200" alt="오가닉 보들보들한 타월"/>
+              </a>
+              <p class="product_title">오가닉 보들보들한 타월</p>
+              <p class="product_price">13,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_04.png" width="135" height="200" alt="쿠션 커버"/>
+              </a>
+              <p class="product_title">쿠션 커버</p>
+              <p class="product_price">19,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_02.png" width="135" height="200" alt="오가닉 서커 침대 패드"/>
+              </a>
+              <p class="product_title">오가닉 서커 침대 패드</p>
+              <p class="product_price">43,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_01.png" width="135" height="200" alt="라탄 박스"/>
+              </a>
+              <p class="product_title">라탄 박스</p>
+              <p class="product_price">49,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_03.png" width="135" height="200" alt="오가닉 보들보들한 타월"/>
+              </a>
+              <p class="product_title">오가닉 보들보들한 타월</p>
+              <p class="product_price">13,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/new_04.png" width="135" height="200" alt="쿠션 커버"/>
+              </a>
+              <p class="product_title">쿠션 커버</p>
+              <p class="product_price">19,900원</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //추천상품 스와이퍼 -->
+      <!-- 최근 본 상품 스와이퍼 -->
+      <div class="recently_watched">
+        <h2 class="title_big">최근 본 상품</h2>
+        <h3 class="title_small">가장 최근에 구경하신 상품입니다</h3>
+        <div class="product_swiper_inner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_01.png" width="135" height="200" alt="스토퍼 하드 캐리 19L"/>
+              </a>
+              <p class="product_title">스토퍼 하드 캐리 19L</p>
+              <p class="product_price">139,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_02.png" width="135" height="200" alt="발이 편한 신발"/>
+              </a>
+              <p class="product_title">발이 편한 신발</p>
+              <p class="product_price">34,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_04.png" width="135" height="200" alt="유칼립투스 에센셜 오일"/>
+              </a>
+              <p class="product_title">유칼립투스 에센셜 오일</p>
+              <p class="product_price">31,400원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_03.png" width="135" height="200" alt="수납 캐비닛 하이타입"/>
+              </a>
+              <p class="product_title">수납 캐비닛 하이타입</p>
+              <p class="product_price">339,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_01.png" width="135" height="200" alt="스토퍼 하드 캐리 19L"/>
+              </a>
+              <p class="product_title">스토퍼 하드 캐리 19L</p>
+              <p class="product_price">139,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_02.png" width="135" height="200" alt="발이 편한 신발"/>
+              </a>
+              <p class="product_title">발이 편한 신발</p>
+              <p class="product_price">34,900원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_04.png" width="135" height="200" alt="유칼립투스 에센셜 오일"/>
+              </a>
+              <p class="product_title">유칼립투스 에센셜 오일</p>
+              <p class="product_price">31,400원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_03.png" width="135" height="200" alt="수납 캐비닛 하이타입"/>
+              </a>
+              <p class="product_title">수납 캐비닛 하이타입</p>
+              <p class="product_price">339,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_01.png" width="135" height="200" alt="스토퍼 하드 캐리 19L"/>
+              </a>
+              <p class="product_title">스토퍼 하드 캐리 19L</p>
+              <p class="product_price">139,000원</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0);">
+                <img src="./img/common/popular_02.png" width="135" height="200" alt="발이 편한 신발"/>
+              </a>
+              <p class="product_title">발이 편한 신발</p>
+              <p class="product_price">34,900원</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //최근 본 상품 스와이퍼 -->
+    </div>
+  </div>
+  <!-- //컨테이너 -->
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_top">
+      <p><a href="javascript:void(0);">About MUJI</a><span class="footer_bar"></span></p>
+      <p><a href="javascript:void(0);">고객센터</a><span class="footer_bar"></span></p>
+      <p><a href="javascript:void(0);">주문/배송</a><span class="footer_bar"></span></p>
+      <p><a href="javascript:void(0);">PC버전</a></p>
+    </div>
+    <div class="footer_bottom">
+      <ul class="footer_link">
+        <li><a href="javascript:void(0);">이용약관<span class="footer_link_bar"></span></a></li>
+        <li><a href="javascript:void(0);">개인정보 처리방침<span class="footer_link_bar"></span></a></li>
+        <li><a href="javascript:void(0);">청소년보호방침</a></li>
+      </ul>
+      <p>롯데쇼핑 주식회사 대표이사 : 강희태</p>
+      <p>서울특별시 송파구 올림픽로 300 롯데월드타워 26층<p>
+      <p>사업자등록번호 : 529-85-00774 (롯데쇼핑(주) e커머스 사업본부)</p>
+      <p>통신판매업 신고 : 2019-서울송파-0158</p>
+      <p class="copy">Copyright ©LOTTE SHOPPING Co., Ltd.<br/>e-commerce business division All rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- //푸터 -->
+</div>
+<script>
+// 상품 색상 & 사이즈 선택
+$('.product_color dd span').click(function(){
+  $('.product_color dd span a').removeClass('selected');
+  $(this).find('a').addClass('selected');
+});
+$('.product_size dd span').click(function(){
+  $('.product_size dd span a').removeClass('selected');
+  $(this).find('a').addClass('selected');
+});
+// 상품 색상 선택할 때 문구 바뀌게
+$('.color_01').click(function(){
+$('.product_color_dt').text("아이보리");
+});
+$('.color_02').click(function(){
+$('.product_color_dt').text("블루");
+});
+$('.color_03').click(function(){
+$('.product_color_dt').text("라이트블루 체크");
+});
+// 상품 사이즈 선택할 때 문구 바뀌게
+$('.size_xs').click(function(){
+$('.product_size_dt').text("XS 사이즈");
+});
+$('.size_s').click(function(){
+$('.product_size_dt').text("S 사이즈");
+});
+$('.size_m').click(function(){
+$('.product_size_dt').text("M 사이즈");
+});
+$('.size_l').click(function(){
+$('.product_size_dt').text("L 사이즈");
+});
+$('.size_xl').click(function(){
+$('.product_size_dt').text("XL 사이즈");
+});
+// Slick 추가
+$(".slick_sub02").slick({
+  lazyLoad: 'ondemand',
+  infinite: true,
+  dots: true
+});
+</script>
+</body>
+</html>

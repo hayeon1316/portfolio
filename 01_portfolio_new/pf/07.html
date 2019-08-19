@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../inc/css/style.css"/>
+<script src="../inc/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper" class="portfolio">
+  <div class="container">
+    <div class="pf_top">
+      <div class="pf_top_wrapper">
+        <h2>Flexbox 연습</h2>
+        <p class="section_title">포트폴리오 제작 목적 및 기획</p>
+        <div class="pf_top_l">
+          <p class="pf_explain">
+            Flexbox에 대해서 학습한 후 확실한 이해를 위하여 제작 실습을 해보았습니다.
+            Position 속성을 활용해 제작된 네이버 메일함이 Flexbox를 연습하기에 적합하다고 판단되어 Flexbox로 다시 구현하는 연습을 했습니다.
+            페이지 내의 대부분의 요소들은 모두 Flexbox 속성을 사용해 배치하였으며, 컨테이너와 아이템에 해당하는 각 요소들이 적절하게 배치될 수 있도록
+            알맞은 속성을 사용하여 레이아웃을 구현하기 위해 노력했습니다. Flexbox 연습을 위한 요소 외에 아이콘, 이미지 등의 요소들은 디테일을 배제하고 간단하게 사각형으로만 표현하였습니다.
+            또한 간단한 기능들은 JavaScript 코드를 직접 작성하여 구현했습니다.
+          </p>
+        </div>
+        <div class="pf_top_r">
+        <dl>
+          <dt class="section_title letters3">뷰포트</dt>
+          <dd>데스크탑 전용</dd>
+        </dl>
+        <dl>
+          <dt class="section_title letters3">기여도</dt>
+          <dd>100% 자가 구축</dd>
+        </dl>
+        <dl>
+          <dt class="section_title">제작기간</dt>
+          <dd class="first_dd">기획 및 디자인 1일</dd>
+          <dd class="second_dd">퍼블리싱 2일</dd>
+        </dl>
+        <dl>
+          <dt class="section_title letters3">키워드</dt>
+          <dd>Flexbox</dd>
+        </dl>
+        <a href="http://hayeon-kim.com/portfolio/07" target="_blank" class="gotoLink">사이트 바로가기</a>
+        </div>
+      </div>
+    </div>
+    <div class="pf_bottom">
+      <span class="portfolio_img">
+        <img src="../inc/img/pf_col_07.png" alt="Flexbox 연습을 위해 제작한 포트폴리오의 이미지"/>
+      </span>
+      <div><p class="section_title">파일명을 클릭해 자세히 살펴볼 수 있습니다</p></div>
+      <ul class="links">
+        <li>
+          <span class="category htmlFile">HTML</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/07_flexbox/index.html" target="_blank">index.html</a></span>
+          <p>html 파일</p>
+        </li>
+        <li>
+          <span class="category cssFile">CSS</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/07_flexbox/inc/css/style.css" target="_blank">style.css</a></span>
+          <p>페이지에 사용된 CSS 파일</p>
+        </li>
+        <li>
+          <span class="category jsFile">JS</span>
+          <span class="link"><a href="https://github.com/hayeon1316/portfolio/blob/master/07_flexbox/inc/js/common.js" target="_blank">common.js</a></span>
+          <p>페이지에 사용된 JavaScript 파일</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_wrapper">
+      <h2>부족한 점은 학습해 보완하고 더 나은 결과물을 만들 수 있는 팀원으로 성장하겠습니다.</h2>
+      <dl>
+        <dt class="section_title">E-MAIL</dt>
+        <dd><a href="mailto:kimma0514@gmail.com">kimma0514@gmail.com</a></dd>
+        <dt class="section_title">MOBILE</dt>
+        <dd><a href="tel:821043281316">010.4328.1316</a></dd>
+        <dt class="section_title">ADDRESS</dt>
+        <dd><a href="https://www.google.com/maps/dir//37.5487965,126.9134081/@37.5469623,126.9128299,17z/data=!4m2!4m1!3e0">서울시 마포구 합정동</a></dd>
+      </dl>
+    </div>
+  </footer>
+</div>
+<script>
+// footer height값이 innerHeight로 적용되게
+window.onload = window.onresize = function () {
+  var footer = document.getElementsByTagName('footer')[0];
+  footer.style.height = window.innerHeight + "px";
+}
+</script>
+</body>
+</html>

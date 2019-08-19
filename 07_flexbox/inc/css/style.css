@@ -1,0 +1,236 @@
+@charset "utf-8";
+@import url('index.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap');
+#wrap{overflow: hidden; display: flex; flex-flow: column wrap; height: 100vh; font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+.header{width: 100%; flex-basis: 55px; background: #905be2;}
+.container{display: flex; width: 100%; height: calc(100% - 85px);}
+.col_01{display: flex; flex-direction: column; flex: 0 0 250px; height: 100%; font-size: 12px; border-right: 1px solid #b4b4b4;}
+.col_01_hide{display: none;}
+.col_01_01{display: flex; flex-flow: column wrap; justify-content: space-between; flex: 0 0 250px; width: 100%; padding: 20px; border-bottom: 1px solid #f0f0f0;}
+.col_01_02{overflow-y: scroll; display: flex; flex-direction: column; flex: 1 1 0; width: 100%; }
+.col_01_03{display: flex; justify-content: space-between; align-items: center; flex: 0 0 50px; width: 100%; color: #616161; border-top: 1px solid #f0f0f0; padding: 0 20px;}
+.col_01_03:after{content: ''; display: inline-block; width: 18px; height: 18px; background: #ddd; margin-top: -2px; vertical-align: middle;}
+.col_01_03 span:before{content: ''; display: inline-block; width: 18px; height: 18px; background: #ddd; margin: -2px 10px 0 0; vertical-align: middle;}
+.btns{display: flex;}
+.btns button{flex-grow: 1; height: 35px; line-height: 35px; color: #fff; background: #905be2;}
+.btns button:first-child{margin-right: 1px;}
+.calender{display: flex; flex-flow: column wrap;}
+.calender_top{display: flex; justify-content: space-between; align-items: center; flex-basis: 20px;}
+.calender_top>button{font-size: 14px; color: #666;}
+.calender_top>button:first-child{transform: rotate(90deg); padding: 5px 5px 0 5px;}
+.calender_top>button:last-child{font-size: 12px; padding: 5px 0 5px 5px;}
+.calender_top span span{font-size: 17px; font-weight: 700; color: #222; margin: 0 10px;}
+.calender_top span>button{margin-top: -4px;}
+.calender_bottom{display: flex; flex-flow: column wrap; font-size: 11px;}
+.calender_bottom ul{display: flex; background: #f2f2f2;}
+.calender_bottom ul:first-child{background: none;}
+.calender_bottom ul li{flex: 1; height: 22px; line-height: 22px; color: #666666; text-align: center;}
+.calender_bottom ul li.deactivated{opacity: .4;}
+.calender_bottom ul li a{display: block; color: #666666;}
+.calender_bottom ul li a.holiday{color: #fc0d1f;}
+.calender_bottom ul li:first-child a{color: #fc0d1f;}
+.calender_bottom ul li a.selected{color: #fff; background: #905be2; font-weight: 700;}
+.col_01_02{font-size: 12px;}
+.col_01_02>div{width: 100%;}
+.col_01_02>div:first-child{display: flex; flex: 0 0 60px; align-items: center; border-bottom: 1px solid #f0f0f0;}
+.col_01_02>div:first-child a{display: block; width: 100%; height: 30px; line-height: 30px; color: #905be2; font-weight: 700; padding: 0 20px;}
+.col_01_02>div:first-child a:hover{background: #f2f2f2;}
+.col_01_02>div:first-child a:before{content: ''; display: inline-block; width: 18px; height: 18px; background: #905be2; margin: -2px 10px 0 0; vertical-align: middle;}
+.col_01_02>div:nth-child(2){display: flex; flex-flow: column wrap; border-bottom: 1px solid #f0f0f0; padding: 14px 0;}
+.myCal{display: flex; justify-content: space-between; padding: 0 20px;}
+.myCal li{height: 36px; line-height: 36px;}
+.myCal li a{color: #616161;}
+a.myCal_btn_01{display: inline-block; font-size: 14px; font-weight: 700; transform: rotate(90deg);}
+a.myCal_btn_01_fold{transform: none;}
+a.myCal_btn_01+a{margin-left: 10px;}
+a.myCal_btn_02{display: inline-block; width: 18px; height: 18px; background: #ddd; margin: -2px 10px 0 0; vertical-align: middle;}
+a.myCal_btn_03{display: inline-block; width: 18px; height: 18px; background: #ddd; margin-top: -2px; vertical-align: middle;}
+.myCal_bottom{display: flex; flex-wrap: wrap;}
+.myCal_bottom_hide{display: none;}
+.myCal_bottom li{width: 100%;}
+.myCal_bottom li a{display: block; height: 30px; line-height: 30px; padding-left: 40px; color: #616161;}
+.myCal_bottom li a:hover{background: #f2f2f2;}
+.myCal_bottom li a:before{content: ''; display: inline-block; width: 14px; height: 14px; background: #a02031; margin: -2px 8px 0 0; vertical-align: middle;}
+.myCal_bottom li:first-child a:before{background: #4984d9;}
+.col_01_02>div:nth-child(3){display: flex; flex-flow: column wrap; padding: 14px 0;}
+.col_01_02>div:nth-child(3) a{height: 30px; line-height: 30px; color: #616161; padding-left: 20px;}
+.col_01_02>div:nth-child(3) a:hover{background: #f2f2f2;}
+.col_01_02>div:nth-child(3) a:before{content: ''; display: inline-block; width: 16px; height: 16px; background: #ddd; margin: -2px 10px 0 0; vertical-align: middle;}
+.col_02{overflow-x: scroll; display: flex; flex-direction: column; width: calc(100% - 250px);}
+.col_02_inner{overflow: hidden; min-width: 750px; height: 100%;}
+.col_02_expand{width: 100%;}
+.col_02_row1{display: flex; flex-flow: column wrap;}
+.aboveCal_top{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; height: 50px; padding: 0 20px;}
+.aboveCal_top>div{display: flex; flex-wrap: wrap; align-items: center;}
+#leftMenu{display: flex; width: 32px; height: 32px; border: 1px solid #cbcbcb;}
+#leftMenu span{display: block; position: relative; width: 16px; height: 2px; background: #666; font-size: 0; margin: auto;}
+#leftMenu span:before{content: ''; position: absolute; left: 0; top: -5px; width: 100%; height: 2px; background: #666;}
+#leftMenu span:after{content: ''; position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background: #666;}
+#leftMenu:hover{background: #e5e5e5;}
+.searchBox{position: relative; margin-left: 10px;}
+.searchBox input{width: 200px; height: 32px; line-height: 32px; font-size: 12px; color: #555; border: 1px solid #cbcbcb; padding: 0 10px;}
+.searchBox input+label{position: absolute; left: 0; top: 0; height: 32px; line-height: 32px; color: #b1b1b1; font-size: 12px; padding: 0 10px;}
+.searchBox button{display: inline-block; width: 50px; height: 32px; line-height: 30px; color: #555; font-size: 12px; text-align: center; border: 1px solid #cbcbcb; border-left: none; margin-left: -4px; vertical-align: middle;}
+.searchBox button:hover{background: #e5e5e5;}
+.searchBox button:after{content: '>'; display: inline-block; margin-left: 3px; font-size: 14px; font-weight: 700; transform: rotate(90deg); vertical-align: middle;}
+.aboveCal_top>div>p{font-size: 12px; color: #222; font-weight: 700; line-height: 32px; margin-left: 15px;}
+.aboveCal_top>div>p a{display: inline-block; width: 18px; height: 18px; border: 1px solid #ddd; vertical-align: middle; margin-left: 5px;}
+.aboveCal_top>div:nth-child(2) a{display: inline-block; font-size: 11px; color: #909090; line-height: 1; margin-right: 10px; border-bottom: 1px solid #fff;}
+.aboveCal_top>div:nth-child(2) a:hover{border-bottom: 1px solid #909090;}
+.aboveCal_top>div:nth-child(2) button{height: 32px; line-height: 32px; font-size: 12px; padding: 0 10px; border: 1px solid #905be2; color: #905be2;}
+.aboveCal_top>div:nth-child(2) button:before{content: ''; display: inline-block; width: 14px; height: 14px; background: #905be2; vertical-align: middle; margin: -2px 4px 0 0;} /*여기부터*/
+.aboveCal_btm{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; height: 50px; padding: 0 20px;}
+.aboveCal_btm>div{display: flex; flex-wrap: wrap; align-items: center;}
+.aboveCal_btm_01 p{display: none; font-size: 15px; color: #333; font-weight: 700; margin-right: 10px;}
+.aboveCal_btm_01 p#monthlyDate{display: block;}
+.aboveCal_btm_01 button{font-size: 12px; color: #333;}
+.aboveCal_btm_01 button:nth-child(6), .aboveCal_btm_01 button:nth-child(7){width: 25px; height: 30px; border: 1px solid #cbcbcb;}
+.aboveCal_btm_01 button:nth-child(7){border-left: none;}
+.aboveCal_btm_01 button:nth-child(8){height: 30px; font-size: 12px; color: #333; padding: 0 12px; border: 1px solid #cbcbcb; border-left: none;}
+.aboveCal_btm_01 button:hover{background: #e5e5e5;}
+.aboveCal_btm_02{border: 1px solid #cbcbcb;}
+.aboveCal_btm_02 button{height: 30px; font-size: 12px; color: #333; font-weight: 700; padding: 0 8px; background: #f8f8f8; border-right: 1px solid #cbcbcb;}
+.aboveCal_btm_02 button:last-child{border-right: none;}
+.aboveCal_btm_02 button:hover{background: #e5e5e5;}
+.aboveCal_btm_02 button.active{color: #fff; background: #905be2;}
+.aboveCal_btm_03 button{width: 30px; height: 30px; border: 1px solid #cbcbcb;}
+.aboveCal_btm_03 button:first-child{border-right: none;}
+.aboveCal_btm_03 button:hover{background: #e5e5e5;}
+.aboveCal_middle{display: none; padding: 0 0 15px 60px; margin-top: 15px; border-bottom: 1px solid #dadada;}
+.details_box_show{display: flex;}
+.detail_left{display: flex; flex-flow: column wrap;}
+.detail_left>ul{display: flex; align-items: center; margin-bottom: 6px;}
+.detail_left>ul:last-child{margin: 0;}
+.detail_left>ul li.detail_input{display: flex; align-items: center;}
+.detail_left>ul li{font-size: 11px; color: #333; font-weight: 700;}
+.detail_left>ul li:nth-child(1), .aboveCal_middle>div>ul li:nth-child(3){width: 55px;}
+.detail_left>ul li:nth-child(3){margin-left: 15px;}
+.detail_left>ul li input{width: 160px; height: 26px; line-height: 26px; font-weight: 400; color: #222; border: 1px solid #cbcbcb; padding: 0 10px;}
+input.on+label{display: none;}
+.detail_left>ul li.detail_input>div{position: relative;}
+.detail_left>ul li.detail_input>div>input{width: 75px; height: 26px; line-height: 26px; border: 1px solid #cbcbcb;}
+.detail_left>ul li.detail_input>div>input+label{position: absolute; left: 8px; top: 0; height: 26px; line-height: 26px; font-size: 12px; color: #666; font-weight: 400;}
+.detail_left>ul li.detail_input>span{width: 6px; height: 1px; font-size: 0; background: #333; margin: 0 2px;}
+.detail_left>ul li select{width: 160px; height: 26px; line-height: 26px; border: 1px solid #cbcbcb; padding: 0 10px; color: #666; font-weight: 400;}
+.detail_left>ul li.select{position: relative;}
+.detail_left>ul li.select:after{content: 'V'; position: absolute; right: 0; top: 0; width: 15px; height: 26px; line-height: 26px; font-weight: 700; text-align: center; border-left: 1px solid #cbcbcb;}
+.detail_right{display: flex; margin-left: 15px;}
+.detail_right>div{display: flex; flex-direction: column; justify-content: space-between;}
+.detail_right>div>div{display: flex;}
+.range{font-size: 11px; color: #333; font-weight: 700; line-height: 26px; margin-right: 5px;}
+.colorBox{display: flex; flex-wrap: wrap; align-content: flex-start; width: 190px;}
+.colorBox span a{display: block; width: 16px; height: 16px; font-size: 0; font-weight: 700; color: #fff; text-align: center; padding-top: 1px; margin: 0 10px 10px 0;}
+.colorBox span:nth-child(1) a{background: #f05259;}
+.colorBox span:nth-child(2) a{background: #fac9d3;}
+.colorBox span:nth-child(3) a{background: #f6733c;}
+.colorBox span:nth-child(4) a{background: #feeb86;}
+.colorBox span:nth-child(5) a{background: #d09a32;}
+.colorBox span:nth-child(6) a{background: #cede84;}
+.colorBox span:nth-child(7) a{background: #3aa140; margin-right: 0;}
+.colorBox span:nth-child(8) a{background: #aee1ef;}
+.colorBox span:nth-child(9) a{background: #4c86d6;}
+.colorBox span:nth-child(10) a{background: #d4c1f0; margin: 0;}
+.checkboxes{display: flex; align-items: baseline;}
+.checkboxes input[type=checkbox]{-webkit-appearance: checkbox;}
+.checkboxes input[type=checkbox]:first-child+span{margin-right: 15px;}
+.checkboxes input[type=checkbox]+span{font-size: 11px; color: #333; margin-left: 2px}
+.detail_right button{height: 100%; background: #f8f8f8; font-size: 12px; color: #333; font-weight: 700; padding: 0 15px; border: 1px solid #cbcbcb;}
+.col_02_row2{height: calc(100% - 100px); font-size: 12px; border-top: 1px solid #dadada;}
+.shorter{height: calc(100% - 221px);}
+.cal_monthly{display: flex; flex-flow: column wrap; height: 100%;}
+.cal_monthly ul li{position: relative; flex: 1;}
+.cal_monthly ul li:first-child, .cal_monthly ul li:first-child a{color: #fc0d1f;}
+.cal_monthly ul li.deactivated{opacity: .4; border-right: 1px solid rgba(0,0,0,.15);}
+.cal_monthly ul li a{color: #222;}
+.cal_monthly ul li a.holiday{color: #fc0d1f;}
+.cal_monthly ul li a.holiday+span.date_info{color: #fc0d1f;}
+.cal_monthly ul li span.date_info{position: absolute; right: 10px; top: 10px; color: #959595;}
+.cal_section{height: 30px; background: #f8f8f8; border-bottom: 1px solid #f1f1f1;}
+.cal_section ul{display: flex; flex-wrap: wrap; padding: 0 15px;}
+.cal_section ul li{padding: 0 10px; line-height: 30px; color: #555;}
+.cal_dates{display: flex; flex-flow: column wrap; height: calc(100% - 30px); padding: 0 15px;}
+.cal_dates ul{display: flex; flex-flow: row wrap; flex: 1 1 auto; width: 100%; height: 20%; border-bottom: 1px solid #e6e6e6;}
+.cal_dates ul:last-child{border-bottom: none;}
+.cal_dates ul li{border-right: 1px solid #f1f1f1;}
+.cal_dates ul li:last-child{border-right: none;}
+.cal_dates ul li a{display: block; height: 100%; padding: 10px;}
+.cal_dates ul li a.selected{background: #dee5fd;}
+.cal_daily{display: flex; flex-direction: column; height: 100%;}
+.cal_top{width: 100%; font-size: 12px; color: #222;}
+.cal_top{display: flex;}
+.cal_top li{display: flex; height: 30px; line-height: 30px; align-items: center;}
+.cal_top li:first-child{justify-content: flex-end; width: 80px; font-weight: 700; padding-right: 20px; background: #f1f1f1;}
+.cal_top li a{color: #222;}
+.cal_top li.holiday{color: #f00;}
+.cal_daily .cal_top li:last-child{flex-grow: 1; justify-content: space-between; background: #f8f8f8; padding: 0 5px;}
+.cal_daily .cal_top li:last-child span:last-child{color: #777;}
+.cal_middle{display: flex;}
+.cal_middle ul:first-child{flex-basis: 80px; text-align: right; border-right: 1px solid #e3e4e7;}
+.cal_middle ul:first-child li{padding-right: 5px;}
+.cal_middle ul:last-child{flex-grow: 1;}
+.cal_middle ul li{height: 20px; line-height: 21px; font-size: 12px; color: #666; border-bottom: 1px solid #f1f1f1;}
+.cal_bottom{overflow-y: scroll; height: calc(100% - 90px);}
+.cal_bottom>div{display: flex;}
+.cal_bottom ul{display: flex; flex-direction: column; padding-top: 10px;}
+.cal_bottom ul li{height: 40px;}
+.cal_bottom ul:first-child{flex-basis: 80px; text-align: right; border-right: 1px solid #e3e4e7; margin-top: -3px;}
+.cal_bottom ul:first-child li{padding-right: 5px;}
+.cal_bottom ul:last-child{flex-grow: 1;}
+.cal_bottom ul:last-child li{height: 40px; border-bottom: 1px solid #f1f1f1;}
+.cal_bottom ul:last-child li:first-child{border-top: 1px solid #f1f1f1;}
+.cal_daily .cal_bottom ul li span{margin-right: 10px;}
+.cal_weekly{display: flex; flex-direction: column; height: 100%;}
+.cal_weekly .cal_top li{flex-grow: 1; background: #f8f8f8; padding-left: 3px;}
+.cal_weekly .cal_top li:first-child{flex: 0 0 80px; background: #f1f1f1;}
+.cal_weekly .cal_middle ul:last-child li{display: flex;}
+.cal_weekly .cal_middle ul:last-child li span{flex-grow: 1; border-right: 1px solid #f1f1f1;}
+.cal_weekly .cal_bottom div ul li{display: flex;}
+.cal_weekly .cal_bottom div ul li span{flex-grow: 1; border-right: 1px solid #f1f1f1;}
+.cal_weekly .cal_bottom div ul:first-child li{display: block;}
+.cal_weekly .cal_bottom div ul:first-child li span{margin-right: 10px;}
+.cal_list{display: flex; flex-direction: column; height: 100%;}
+.cal_list .cal_top li{display: block; color: #777; text-align: center; font-weight: 400;}
+.cal_list .cal_top li:first-child{background: #f8f8f8; padding: 0;}
+.cal_list .cal_top li:nth-child(2){flex-grow: .5;}
+.cal_list .cal_top li:nth-child(3){flex-grow: 1.5;}
+.cal_list .cal_top li:nth-child(4){flex-grow: 2; text-align: left; padding-left: 10px;}
+.cal_list .cal_top li:nth-child(5){flex-grow: 10; text-align: left; padding-left: 10px;}
+.cal_list .cal_top{background: #f8f8f8;}
+.cal_list .cal_bottom{height: calc(100% - 30px);}
+.cal_list .cal_bottom ul{padding: 0; border-right: 1px solid #f1f1f1;}
+.cal_list .cal_bottom ul:first-child{margin: 0;}
+.cal_list .cal_bottom ul:first-child li{text-align: left; padding: 14px 0 0 20px; border-bottom: 1px solid #f1f1f1;}
+.cal_list .cal_bottom ul:first-child li a{color: #222;}
+.cal_list .cal_bottom ul:first-child li.holiday a{color: #f00;}
+.cal_list .cal_bottom ul:last-child li:first-child{border-top: none;}
+.cal_list .cal_bottom ul:nth-child(2){flex-grow: .8; flex-basis: 0;}
+.cal_list .cal_bottom ul:nth-child(3){flex-grow: 1.8; flex-basis: 0;}
+.cal_list .cal_bottom ul:nth-child(4){flex-grow: 2.3; flex-basis: 0;}
+.cal_list .cal_bottom ul:nth-child(5){flex-grow: 10; flex-basis: 0;}
+.cal_list .cal_bottom ul li{border-bottom: 1px solid #f1f1f1; color: #222;}
+.cal_list .cal_bottom ul li.holiday{color: #f00;}
+.cal_list .cal_bottom ul:nth-child(2) button{width: 15px; height: 15px; font-size: 16px; line-height: 15px; color: #777; font-weight: 700; border: 1px solid #dadada; margin: auto;}
+.cal_list .cal_bottom ul:nth-child(2) li{display: flex;}
+.cal_list .cal_bottom ul:nth-child(5) li{padding: 12px 0 0 12px;}
+.cal_fortnight{display: flex; flex-direction: column; height: 100%;}
+.cal_fortnight ul{display: flex;}
+.cal_fortnight ul.fortnight_day{height: 30px; background: #f8f8f8; border-bottom: 1px solid #f1f1f1;}
+.cal_fortnight ul.fortnight_day li{color: #555;}
+.cal_fortnight ul li{flex: 1 1 0; color: #555; border-right: 1px solid #f1f1f1; padding: 7px 0 0 10px;}
+.cal_fortnight ul li.holiday{color: #f00;}
+.fortnight_date{height: calc(50% - 15px);}
+.fortnight_date li{position: relative;}
+.fortnight_date li a{color: #222;}
+.fortnight_date li a.deactivated{opacity: .4;}
+.fortnight_date li a.holiday{color: #f00;}
+.fortnight_date li span{position: absolute; top: 7px; right: 7px; color: #959595;}
+.cal_fortnight ul:last-child{border-top: 1px solid #f1f1f1;}
+.footer{display: flex; justify-content: space-between; width: 100%; height: 30px; flex: 0; font-size: 11px; color: #777; border-top: 1px solid #b4b4b4; padding: 10px 20px 0;}
+.footer ul{display: flex; letter-spacing: -1px;}
+.footer ul li{padding: 0 5px; border-right: 1px solid #dadada;}
+.footer ul li a{display: inline-block; line-height: 1; color: #777;}
+.footer ul li:first-child{padding-left: 0;}
+.footer ul li:last-child{padding-right: 0; border-right: none;}
+.footer ul li a:hover{border-bottom: 1px solid #777;}
+.footer p{letter-spacing: .3px;}
+.footer p span{color: #2cb400; font-weight: 700;}

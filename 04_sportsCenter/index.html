@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>포트폴리오 - K Sports center</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+<script src="inc/js/common.js"></script>
+<script src="inc/js/skrollr.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="mainpage">
+  <!-- Header -->
+  <header>
+    <h1 class="logo"><a href="index.html">K Sports Center</a></h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="javascript:void(0);">About us</a></li>
+        <li><a href="sub_01.html">Our Team</a></li>
+        <li><a href="sub_02.html">Class</a></li>
+        <li><a href="javascript:void(0);">News</a></li>
+        <li><a href="javascript:void(0);">Reservation</a></li>
+      </ul>
+    </nav>
+    <ul class="sign">
+      <li><a href="javascript:void(0);">Sign in</a></li>
+      <li><a href="javascript:void(0);">Sign up</a></li>
+    </ul>
+  </header>
+  <!-- //Header -->
+  <!-- main -->
+  <main>
+    <!-- Section_01 Main -->
+    <section class="section_01" data-top="background-position: left 70%;" data-end="background-position: left 0%;">
+      <div class="sec_01_text">
+        <h2>stay strong.<br/>stay in good shape.<br/>stay healthy.</h2>
+        <p>Do you wanna change your life?</p>
+        <p>Just begin to be stronger with us.</p>
+      </div>
+    </section>
+    <!-- //Section_01 Main -->
+    <!-- Section_02 About us -->
+    <section class="section_02">
+      <p class="sec_title_s">ABOUT US</p>
+      <h3 class="sec_title">the reason why you should start workout with our professional team is -</h3>
+      <p class="sec_text">Our team is strong and healthy enough to make you the same as us.
+      we entirely understand how it is difficult and arduous to controng yourself.
+      but once you begin to handle the condition of your body and mind,
+      you will be able to feel that you are eventually controlling everything in your life to the way you want.
+      just go for it with us, and feel it.</p>
+    </section>
+    <!-- //Section_02 About us -->
+    <!-- Section_03 Class -->
+    <section class="section_03">
+      <div class="sec_inner">
+        <p class="sec_title_s">OUR CLASSES</p>
+        <h3 class="sec_title">have a look what classes you can participate in this month -</h3>
+        <div class="sec_03_text">
+          <div class="class_tab">
+            <button type="button" class="tablinks" onclick="openClass(event, 'swimming')" id="defaultOpen">SWIMMING</button>
+            <button type="button" class="tablinks" onclick="openClass(event, 'yoga')">YOGA</button>
+            <button type="button" class="tablinks tab_last" onclick="openClass(event, 'pilates')">PILATES</button>
+          </div>
+          <div class="tab_conts" id="swimming">
+            <p class="sec_text">Our <span>swimming</span> classes are seperated to 3 different levels to achieve customers' goal faster and efficiently. if you need more information, <a href="sub_02.html">check it out here!</a></p>
+            <div class="class_table">
+              <ul class="beginning">
+                <li>Beginning<span>[Morning time]</span></li>
+                <li>7:00-9:00AM</li>
+                <li>Mon·Tue·Wed</li>
+                <li>$128 per month</li>
+              </ul>
+              <ul>
+                <li>Beginning<span>[Evening time]</span></li>
+                <li>7:00-9:00AM</li>
+                <li>Mon·Tue·Wed</li>
+                <li>$128 per month</li>
+              </ul>
+              <ul>
+                <li>Intermediate</li>
+                <li>8:00-9:00AM</li>
+                <li>Tue·Fri</li>
+                <li>$88 per month</li>
+              </ul>
+              <ul>
+                <li>Advanced</li>
+                <li>9:00-10:00PM</li>
+                <li>Fri·Sat</li>
+                <li>$88 per month</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab_conts" id="yoga">
+            <p class="sec_text">Our <span>yoga</span> classes are seperated to 3 different levels to achieve customers' goal faster and efficiently. if you need more information, <a href="sub_02.html">check it out here!</a></p>
+            <div class="class_table">
+              <ul class="beginning">
+                <li>Beginning<span>[Morning time]</span></li>
+                <li>7:00-9:00AM</li>
+                <li>Mon·Tue·Wed</li>
+                <li>$128 per month</li>
+              </ul>
+              <ul>
+                <li>Beginning<span>[Evening time]</span></li>
+                <li>7:00-9:00AM</li>
+                <li>Mon·Tue·Wed</li>
+                <li>$128 per month</li>
+              </ul>
+              <ul>
+                <li>Intermediate<span>[Morning time]</span></li>
+                <li>8:00-9:00AM</li>
+                <li>Tue·Fri</li>
+                <li>$88 per month</li>
+              </ul>
+              <ul>
+                <li>Intermediate<span>[Evening time]</span></li>
+                <li>8:00-9:00AM</li>
+                <li>Tue·Fri</li>
+                <li>$88 per month</li>
+              </ul>
+              <ul>
+                <li>Advanced<span>[Morning time]</span></li>
+                <li>9:00-10:00PM</li>
+                <li>Fri·Sat</li>
+                <li>$88 per month</li>
+              </ul>
+              <ul>
+                <li>Advanced<span>[Evening time]</span></li>
+                <li>9:00-10:00PM</li>
+                <li>Fri·Sat</li>
+                <li>$88 per month</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab_conts" id="pilates">
+            <p class="sec_text">Our <span>pilates</span> classes are seperated to 3 different levels to achieve customers' goal faster and efficiently. if you need more information, <a href="sub_02.html">check it out here!</a></p>
+            <div class="class_table">
+              <ul class="beginning">
+                <li>Beginning</li>
+                <li>7:00-9:00AM</li>
+                <li>Mon·Tue·Wed</li>
+                <li>$128 per month</li>
+              </ul>
+              <ul>
+                <li>Intermediate</li>
+                <li>8:00-9:00AM</li>
+                <li>Tue·Fri</li>
+                <li>$88 per month</li>
+              </ul>
+              <ul>
+                <li>Advanced</li>
+                <li>9:00-10:00PM</li>
+                <li>Fri·Sat</li>
+                <li>$88 per month</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //Section_03 Class -->
+    <!-- Section_04 Team members -->
+    <section class="section_04">
+      <p class="sec_title_s">OUR TEAM MEMBERS</p>
+      <h3 class="sec_title">Our passionate and motivating team members</h3>
+      <p class="sec_text">Our team members are all passionate, and professional. If you are looking for instructors who are considerate and kind but trustworthy to help you to achieve your goal, you've come to the right place. <a href="sub_01.html">look into more about us!</a></p>
+      <span class="sec_04_bg" data-bottom-top="background-position: left 80%;" data-center-bottom="background-position: left 55%;"></span>
+    </section>
+    <!-- //Section_04 Team members -->
+  </main>
+  <!-- //main -->
+  <!-- Footer -->
+  <footer>
+    <!-- Footer - left -->
+    <section class="footer_l">
+      <h2>K SPORTS CENTER</h2>
+      <p>Stay Strong</p>
+      <p>Stay in good shape</p>
+      <p>Stay healthy</p>
+    </section>
+    <!-- //Footer - left -->
+    <!-- Footer - right -->
+    <section class="footer_r">
+      <div class="footer_r_grid">
+        <h3>OPERATING TIME</h3>
+        <dl>
+          <dt>DAY</dt>
+          <dd>MON - SUN</dd>
+          <dt>TIME</dt>
+          <dd>6AM - 11PM</dd>
+          <dt>HOLIDAY</dt>
+          <dd class="dd_1st">National holiday,</dd>
+          <dd>2nd &amp; 4th Sundays of every month</dd>
+        </dl>
+      </div>
+      <div class="footer_r_grid">
+        <h3>CONTACT US</h3>
+        <dl>
+          <dt>CONTACT</dt>
+          <dd>0481 - 777 - 1316</dd>
+          <dt>FAX</dt>
+          <dd>0481 - 888 - 1316</dd>
+          <dt>ADDRESS</dt>
+          <dd class="dd_1st">K SPORTS CENTER</dd>
+          <dd>105 Clarendon street, Melbourne, VIC 3000</dd>
+        </dl>
+      </div>
+      <div class="footer_r_grid">
+        <h3>SUBSCRIBE US</h3>
+        <p>You can get any news for discount or promotion event by subscribing our e-mailing service.</p>
+        <div class="f_subscribe">
+          <input type="text" id="subscribe"/>
+          <label for="subscribe">Your e-mail address</label>
+          <button type="submit">SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+    <!-- //Footer - right -->
+  </footer>
+  <!-- //Footer -->
+</div>
+<script>
+/* 메인페이지 클래스 정보 Tab */
+function openClass(evt, classTab) {
+  // 변수 선언
+  var i, tab_conts, tablinks;
+  // 탭 내용 class
+  tab_conts = document.getElementsByClassName("tab_conts");
+  for (i = 0; i < tab_conts.length; i++) {
+    tab_conts[i].style.display = "none";
+  }
+  // 탭 class
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  //클릭한 classTab해당하는 id요소는 display:block; 되게
+  //클릭한 탭에 active 클래스 추가
+  document.getElementById(classTab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+//디폴트로 보여줄 것 클릭
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+@charset "utf-8";
+@import url('index.css');
+@import url('https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+/* main */
+::-webkit-scrollbar {display: block;} /* 스크롤바 안보이게 */
+#wrap{overflow: hidden; position: relative; width: 100vw; height: 100vh; font-family: 'Khula', sans-serif;}
+.wrapper{position: relative; width: 100%; height: 100%; padding: 40px;}
+.header{position: absolute; width: calc(100% - 80px); height: calc(100% - 80px); left: 0; right: 0; top: 0; bottom: 0; margin: auto; font-size: 1.4rem; font-weight: 800;}
+.header h1{position: absolute; left: 15%; top: -8px; z-index: 10;}
+.header h1 a{display: inline-block; color: #515151; padding: 0 15px; background: #fff; vertical-align: middle; line-height: 1;}
+.header h1 span{overflow: hidden; display: inline-block; position: relative; width: 0; height: 25px; font-size: .9rem; font-weight: 300; color: #515151; letter-spacing: .8px; vertical-align: middle; transition: ease .4s;}
+.header h1 span:after{content: 'who is keen to be a member of your great team :)'; position: absolute; left: 0; bottom: 2px; width: 355px; background: #fff;}
+.header h1:hover span{width: 355px; transition: ease .4s;}
+.header nav{position: absolute; width: 100%; top: 50%; transform: translateY(-50%); z-index: 10;}
+.header nav ul li{position: absolute; display: inline-block; letter-spacing: 1.6px;}
+.header nav ul li:first-child{left: -66px; transform: rotate(-90deg); transition: ease .3s;}
+.header nav ul li:last-child{right: -71px; transform: rotate(90deg); transition: ease .3s;}
+.header nav ul li a{display: inline-block; position: relative; padding: 0 15px; color: #515151; line-height: 1; vertical-align: middle;}
+.header nav ul li:first-child:hover{left: -92px; letter-spacing: 8px; transition: ease .3s;}
+.header nav ul li:last-child:hover{right: -100px; letter-spacing: 8px; transition: ease .3s;}
+.header nav ul li:hover a span.nav_bg{width: 0; transition: ease .3s;}
+.nav_bg{display: block; position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 100%; background: #fff; margin: 0 auto; z-index: -1; transition: ease .3s;}
+.border{position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 10px solid #e8df3c; z-index: -2;}
+.container{overflow: hidden; position: relative; width: calc(100% - 40px); height: calc(100% - 40px); margin: 20px auto; z-index: 999;}
+.container_inner{display: inline-block; position: absolute; left: 0; right: 0; width: 70%; margin: 0 auto; top: 50%; transform: translateY(-50%); padding: 20px 0;}
+.container_scroll{overflow-y: scroll;}
+.main_img{float: left; overflow: hidden; display: block; width: 500px; height: 500px; background: url(../img/main.png)no-repeat center; background-size: 180%; transition: ease .3s;}
+.main_img_zoom{background-size: 190%; transition: ease .3s;}
+.main_text{overflow: hidden; position: absolute; width: 100%; top: 50%; transform: translateY(-50%);}
+.main_text h2{float: left; font-size: 4.4rem; margin-left: 35%; font-weight: 800; color: #e8df3c; line-height: 1; letter-spacing: -3.4px; font-style: italic; vertical-align: top;}
+.main_text h2 a{display: inline-block; position: relative; color: #e8df3c; padding-right: 10px;}
+.main_text h2 a:before{content: ''; display: block; position: absolute; left: 0; bottom: 15%; width: 100%; height: 4px; background: #e8df3c; z-index: -1;}
+.main_text h2 a:after{content: ''; display: block; position: absolute; left: 0; bottom: 15%; width: 0; height: 4px; background: #515151; transition: ease .3s; z-index: -1;}
+.main_text h2 a:hover:after{width: 100%; transition: ease .3s;}
+.main_text p{float: right; font-size: 1.4rem; color: #515151; margin-top: 30px; line-height: 1.8; letter-spacing: .5px;}
+.main_text p span{display: inline-block; background: #fff; line-height: 1; padding: 8px 10px 2px;}
+.seemore{display: block; position: absolute; left: -30px; bottom: 60px; height: 42px; line-height: 38px; border: 4px solid #515151; padding: 0 15px; font-size: 1rem; letter-spacing: 1px; font-weight: 800; color: #515151; background: #fff;
+z-index: 10; transition: .3s ease;}
+.seemore:after{content: ''; display: block; position: absolute; right: -10px; top: 38px; width: 100%; height: 8px; background: #e8df3c; z-index: -5;}
+.seemore:before{content: ''; display: block; position: absolute; right: -12px; top: 8px; width: 8px; height: 38px; background: #e8df3c; z-index: -5;}
+.arrow{display: inline-block; position: relative; width: 20px; height: 1px; background: #515151; margin-left: 10px; vertical-align: middle; transition: .4s ease;}
+.arrow:after{content: ''; display: inline-block; position: absolute; top: -2px; right: 0; width: 4px; height: 4px; border-top: 1px solid #515151; border-right: 1px solid #515151; transform: rotate(46deg);}
+.seemore:hover{padding: 0 30px; transition: .3s ease;}
+.seemore:hover .arrow{width: 40px; transition: .3s ease;}
+/* Main - auto typing */
+.actor__content{display: block; flex-grow: 1;}
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.actor__content--typing::after{content: '|'; -webkit-animation: blink 500ms infinite; animation: blink 500ms infinite;}
+/* iframe */
+.pf_wrapper_00, .pf_wrapper_01, .pf_wrapper_02, .pf_wrapper_03, .pf_wrapper_04{display: none; position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 9999;}
+.pf_wrapper iframe{border: none;}
+/* BX slider - 포트폴리오 페이지 */
+.slider-wrapper{position: absolute; left: 0; right: 0; width: 75%; margin: 0 auto; top: 50%; transform: translateY(-50%);}
+.slider-wrapper .bx-viewport{overflow: visible!important; display: inline-block;}
+.slider-wrapper-height{top: 0; transform: none; padding: 40px 0;}
+.slide_pager{overflow: hidden; position: absolute; left: 15%; right: 15%; bottom: -16px; text-align: center; z-index: 10; background: #e8df3c;}
+.slide_pager li{float: left; width: 20%; font-size: 1.4rem; font-weight: 300; letter-spacing: 1px; transition: .3s ease;}
+.slide_pager li:last-child{margin-right: 0;}
+.slide_pager li:last-child:after{content: '';}
+.slide_pager li a{color: #515151;}
+.slide_pager li a.active{font-weight: 800; transition: .3s ease;}
+.slide_pager li span{float: right; color: #fff; font-weight: 300;}
+.bx-controls{position: absolute; width: 100%; left: 0; top: 50%; transform: translateY(-20%);}
+.bx-controls-direction{height: 60px;}
+.bx-prev, .bx-next{display: inline-block; font-size: 0; width: 40px; height: 60px;}
+.bx-prev{position: absolute; left: -120px;}
+.bx-next{position: absolute; right: -120px;}
+.bx-prev:after{content: ''; display: inline-block; width: 100%; height: 100%; background: url(../img/prev_btn.svg)no-repeat center;}
+.bx-next:after{content: ''; display: inline-block; width: 100%; height: 100%; background: url(../img/next_btn.svg)no-repeat center;}
+/* 포트폴리오 페이지 */
+.sub_aboutme, .sub_portfolio{position: relative; background: #e8df3c;}
+.sub_aboutme .nav_bg, .sub_portfolio .nav_bg, .sub_aboutme .header h1 a, .sub_portfolio .header h1 a{background: #e8df3c;}
+.sub_aboutme .header h1 span:after, .sub_portfolio .header h1 span:after{background: #e8df3c}
+.sub_aboutme .border, .sub_portfolio .border{border: 10px solid #fff; z-index: 0;}
+.slider_wrapper{height: 100%;}
+.sub_container{height: 100%; margin: 0 auto;}
+.portfolio_list{position: relative; color: #515151;}
+.portfolio_text{position: relative; width: 80%; margin-right: 20%; padding-bottom: 80px; font-family: 'Nanum Gothic', sans-serif; z-index: 2;}
+.portfolio_info{position: relative; width: 100%; height: 100%; z-index: 2;}
+.portfolio_info h3{font-size: 2.6rem; line-height: 1.4; font-weight: 700; letter-spacing: -1px;}
+.portfolio_info h4{font-size: 1.6rem; font-weight: 300; line-height: 1.3; letter-spacing: .8px; margin-top: 10px; font-family: 'Khula', sans-serif;}
+.explanation{width: 650px; font-size: 1.2rem; line-height: 2; font-weight: 400; margin-top: 40px; margin-left: 90px;}
+.explanation span{padding: 3px; word-break: keep-all; background: #f4eea6;}
+.text_bg{position: absolute; left: 0; top: 0; font-size: 14rem; font-weight: 800; line-height: 1; letter-spacing: -10px; color: rgba(255,255,255,0.3); z-index: -1; font-family: 'Khula', sans-serif;}
+.portfolio_border{position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; border: 10px solid #fff; z-index: -1;}
+.portfolio_img, .portfolio_img_mobile{overflow: hidden; position: absolute; display: inline-block; right: -25%; top: 50%; transform: translateY(-50%); width: 600px; height: 400px; box-shadow: 10px 10px 40px rgba(0,0,0,0.3);}
+.portfolio_text > .img_myown{height: 349px;}
+.portfolio_img_mobile{overflow: visible; display: inline-block; width: auto; height: 500px; box-shadow: none;}
+.portfolio_img_mobile img{float: left; height: 110%;}
+.portfolio_img img{width: 100%;}
+.sub_portfolio .seemore{left: 90px; bottom: 20%; transform: translateY(170%); background: #e8df3c; font-family: 'Khula', sans-serif;}
+.sub_portfolio .seemore:after, .sub_portfolio .seemore:before{background: #fff;}
+.sub_portfolio .img_left .seemore{left: calc(100% - 240px);}
+/* 포트폴리오 리스트 Ver 2 */
+.img_left .portfolio_text{margin: 0 0 0 20%;}
+.img_left .portfolio_img{left: -25%;}
+.img_left .portfolio_info{overflow: hidden; text-align: right;}
+.img_left .explanation{float: right; margin-right: 90px; margin-left: 0;}
+.img_left .text_bg{right: 0;}
+/* 자기소개 페이지 */
+.aboutme_wrapper{position: absolute; left: 0; right: 0; width: 70%; margin: 0 auto; top: 50%; transform: translateY(-50%); padding: 20px 0; vertical-align: middle;}
+.aboutme_wrapper_height, .container_inner_height{top: 0; transform: none;}
+.hello_text{display: inline-block; width: 70%; position: relative; z-index: 2; vertical-align: middle;}
+.hello_text h2{font-size: 3.8rem; font-weight: 800; line-height: 1; color: #fff; font-style: italic; letter-spacing: -2px;}
+.hello_text p{font-size: 1.3rem; line-height: 1.8; color: #515151; margin: 76px 0 0 100px;}
+.hello_text .text_bg{left: 0; top: 160px; font-size: 9.5rem; letter-spacing: -6px; line-height: 0.8; color: rgba(255,255,255,0.4);}
+.hello_text .text_bg span{margin-left: 80px; margin-top: -50px;}
+.sub_aboutme .seemore{display: block; width: 100%; height: 50px; line-height: 46px; position: relative; left: 0; bottom: 0; text-align: center; margin: 40px 0 8px 0; padding: 0; background: #e8df3c; letter-spacing: .5px;}
+.sub_aboutme .seemore:after, .sub_aboutme .seemore:before{background: none;}
+.sub_aboutme .seemore:hover{padding: 0;}
+.contact{display: inline-block; position: relative; width: 29%; padding-left: 80px; color: #515151; vertical-align: bottom; z-index: 3;}
+.contact dl{margin-bottom: 30px;}
+.contact dl dt{font-size: 1rem; font-weight: 800; letter-spacing: 1px; }
+.contact dl dd{font-size: 1rem; font-weight: 300; font-family: 'Nanum Gothic', sans-serif; font-weight: 300;}
+.contact dl.dl_last{margin-bottom: 0;}
+/* 포트폴리오 팝업 (상세페이지) */
+#wrap_pf{width: 100vw; height: 100vh; overflow-y: scroll; font-family: 'Khula', sans-serif; padding-bottom: 60px; background: #e8df3c;}
+.portfolio_page{width: 100%; height: 100%;}
+.portfolio_page .container{overflow: visible; position: relative; width: 100%; height: auto; color: #515151; margin: 0; background: #e8df3c;}
+.infomation{margin: 0 auto; padding-top: 150px;}
+.infomation h3{font-size: 2.6rem; font-weight: 700; letter-spacing: -1px; font-family: 'Nanum Gothic', sans-serif;}
+.infomation h4{font-size: 1.6rem; letter-spacing: 1px; font-weight: 300; margin: 10px 0 60px;}
+.informaiton_text{overflow: hidden; width: 70%; margin: 0 auto 80px;}
+.info_left{float: left; width: 70%;}
+.info_left span{font-size: .9rem; font-weight: 800;}
+.info_left p{font-size: 1.2rem; font-weight: 400; line-height: 2; font-family: 'Nanum Gothic', sans-serif;}
+.info_right{float: right; font-family: 'Nanum Gothic', sans-serif}
+.info_right dl{font-size: .9rem; margin-bottom: 30px;}
+.info_right dl dt{font-weight: 800;}
+.info_right dl dd{margin-top: 10px;}
+.info_right dl.dl_period dd:last-child{margin-top: 6px;}
+.info_bg{display: block; position: absolute; left: 0; right: 0; top: 40px; width: calc(100vw - 80px); height: calc(100vh - 80px); margin: 0 auto; background: #fff; z-index: -1;}
+.pf_img{overflow: hidden; display: block; width: 80%; height: 52vw; margin: 0 auto;  box-shadow: 10px 10px 30px rgba(0,0,0,0.2);}
+.pf_img img{width: 100%;}
+.myown{height: 45.8vw;}
+.pf_page_03 .pf_img{height: 840px;}
+.pf_page_04 .pf_img{height: 780px;}
+.pf_img_mobile{overflow: hidden; width: 80%; margin: 0 auto 0; text-align: center; vertical-align: middle;}
+.pf_img_mobile li{float: left; width: 25%;}
+.pf_img_mobile li img{width: 100%;}
+.container_bottom{padding: 80px 5% 120px; margin: 0 auto; background: #e8df3c;}
+.pf_page_02 .container_bottom{margin-top: 730px;}
+.pf_page_03 .container_bottom{margin-top: 710px;}
+.pf_page_04 .container_bottom{margin-top: 480px;}
+.page_list_text{font-size: .9rem; font-weight: 800; color: #515151; text-align: center; margin-bottom: 30px;}
+.page_list{text-align: center;}
+.page_list li{display: inline-block; font-size: 2rem; font-weight: 800; color: #e8df3c; font-style: italic; text-align: right; margin-right: 100px; }
+.page_list li:last-child{margin-right: 0;}
+.page_list li a{position: relative; color: #515151;}
+.page_list li a:before{content: ''; display: block; position: absolute; left: 0; bottom: 3px; width: 100%; height: 3px; background: #515151;}
+.page_list li a:after{content: ''; display: block; position: absolute; left: 0; bottom: 3px; width: 0; height: 3px; background: #fff; transition: ease .3s;}
+.page_list li a:hover:after{width: 100%; transition: ease .3s;}
+.close_btn{position: fixed; display: block; right: 60px; top: 60px; width: 45px; height: 45px; border: 2px solid #515151; padding: 7px;}
+.close_btn img{background: url(../img/x.svg) no-repeat center; }
+@media screen and (max-width: 1680px) {
+/* aboutme.html */
+.hello_text h2{font-size: 3.2rem;}
+.hello_text .text_bg{top: 140px;}
+/* portfolio.html */
+.bx-prev{left: -90px;}
+.bx-next{right: -90px;}
+}
+@media screen and (max-width: 1440px){
+/* index.html */
+.main_text h2{font-size: 3.9rem;}
+.main_text p{font-size: 1.2rem; line-height: 2;}
+/* aboutme.html */
+.hello_text p{margin-left: 10%; margin-top: 60px; font-size: 1.2rem;}
+.hello_text .text_bg{font-size: 9rem;}
+.contact{padding-left: 10%;}
+/* portfolio.html */
+.portfolio_info h3{font-size: 2.2rem;}
+.portfolio_info h4{font-size: 1.4rem;}
+.portfolio_img_mobile{height: 400px;}
+.portfolio_img, .img_left .portfolio_img{width: 550px; height: 360px;}
+.portfolio_text > .img_myown{height: 320px;}
+.explanation{margin-left: 60px;}
+.img_left .explanation{margin-right: 60px;}
+.sub_portfolio .seemore{left: 60px; bottom: calc(20% + 14px);}
+.sub_portfolio .img_left .seemore{left: calc(100% - 215px)}
+.bx-prev{left: -80px;}
+.bx-next{right: -80px;}
+}
+@media screen and (max-width: 1280px){
+/* index.html */
+.main_img{width: 100%; height: 400px;}
+.main_img span{background-size: 110%;}
+.main_img span.main_img_zoom{background-size: 115%;}
+.main_text{position: static; transform: none; padding-top: 40px;}
+.main_text h2{margin-left: 0; width: 100%; font-size: 3.2rem; letter-spacing: -1.8px; line-height: 1.2;}
+.main_text h2 a:before, .main_text h2 a:after{height: 3px; bottom: 20%;}
+.main_text p{display: inline-block; line-height: 2; margin-top: 20px;}
+.main_text p span{background: none;}
+.seemore{left: -14px; bottom: 450px;}
+/* aboutme.html */
+.hello_text{width: 100%;}
+.hello_text h2{letter-spacing: -1px;}
+.hello_text p{margin-top: 100px;}
+.hello_text .text_bg{top: 160px;}
+.contact{width: 100%; margin-top: 80px;}
+.contact dl{float: left; width: 30%; margin-bottom: 0;}
+.contact dl.dl_first{width: 40%;}
+.contact dl dd{font-size: .9rem;}
+.sub_aboutme .seemore{float: left; border: 2px solid #515151; line-height: 50px;}
+/* portfolio.html */
+.slider-wrapper{width: 70%;}
+.portfolio_text{width: 100%; margin-right: 0; text-align: center; padding-bottom: 60px;}
+.img_left .portfolio_text{margin-left: 0; padding-bottom: 60px;}
+.portfolio_info, .img_left .portfolio_info{padding: 0; text-align: center; margin-top: -30px;}
+.portfolio_info h3{display: inline; background: #f4eea6; line-height: 1.6;}
+.portfolio_info h4{visibility: hidden; display: block; position: relative; height: 1px; margin: 20px 0;}
+.portfolio_info h4:after{visibility: visible; content: ''; display: inline; position: absolute; top: 0; left: 0; right: 0; width: 100px; height: 1px; background: #515151; margin: 0 auto;}
+.portfolio_img_mobile{position: static; right: 0; top: 0; transform: none; margin-right: -4%;}
+.portfolio_img, .img_left .portfolio_img{width: 100%; height: 37vw; position: static; left: 0; top: 0; transform: none;}
+.portfolio_text > .img_myown{height: 30%;}
+.explanation, .img_left .explanation{width: 100%; margin: 0; line-height: 1.8;}
+.explanation span, .img_left .explanation span{background: none;}
+.sub_portfolio .seemore, .sub_portfolio .img_left .seemore{left: 0; right: 0; width: 180px; margin: 0 auto; transform: none; text-align: center; padding: 0; bottom: 0;}
+.sub_portfolio .seemore:hover, .sub_portfolio .img_left .seemore:hover{width: 220px;}
+.text_bg{display: none;}
+.slide_pager{bottom: -13px;}
+.slide_pager li{font-size: 1.2rem;}
+/* portfolio iframe */
+.infomation{padding-top: 120px;}
+.infomation h3{font-size: 2.2rem;}
+.infomation h4{font-size: 1.4rem; letter-spacing: .5px; line-height: 1.4; margin-bottom: 50px;}
+.informaiton_text{margin-bottom: 60px;}
+.info_left{width: 80%;}
+.info_left p{font-size: 1rem;}
+.info_bg{height: 80%; min-height: 800px;}
+.page_list li{font-size: 1.6rem;}
+}
+@media screen and (max-width: 1024px){
+/* index.html */
+.main_text p{width: 100%; line-height: 1.8;}
+.main_text p:before{content: 'And I am a person who always try to see the good in everything, everyone, and myself. I believe that watching the good things makes me optimistic and it gives me better inspiration.'}
+.main_text p span, .main_text p br{display: none;}
+/* aboutme.html */
+.hello_text h2{font-size: 2.8rem;}
+.hello_text p{margin-left: 0;}
+.hello_text .text_bg{font-size: 7rem; letter-spacing: -2px; top: 180px;}
+.hello_text .text_bg span{margin-left: 0;}
+.contact{padding-left: 0;}
+/* portfolio.html */
+.portfolio_img_mobile{height: 37vw;}
+/* portfolio iframe */
+.infomation{padding-top: 100px;}
+.infomation h3{font-size: 2rem; line-height: 1.4;}
+.page_list li{margin-right: 60px;}
+.pf_img_mobile li{width: 33.3333%}
+.pf_img_mobile li:last-child{display: none;}
+}
+@media screen and (max-width: 960px){
+/* index.html */
+.main_img{width: 100%; height: 300px;}
+.main_img span{background-size: 120%;}
+.main_img span.main_img_zoom{background-size: 130%;}
+.main_text h2{font-size: 2.6rem; letter-spacing: -1px;}
+/* aboutme.html */
+/* portfolio.html */
+.portfolio_info, .img_left .portfolio_info{margin-top: 20px;}
+.portfolio_text, .img_left .portfolio_text{padding-bottom: 40px;}
+.sub_portfolio .seemore, .sub_portfolio .img_left .seemore{bottom: -20px;}
+.portfolio_img, .img_left .portfolio_img{box-shadow: 6px 6px 24px rgba(0,0,0,0.1);}
+.slide_pager{bottom: -10px;}
+.slide_pager li{font-size: 1rem;}
+.bx-controls-direction{height: 50px;}
+.bx-prev{left: -60px; width: 30px; height: 50px;}
+.bx-next{right: -60px; width: 30px; height: 50px;}
+.close_btn{width: 35px; height: 35px;}
+/* portfolio iframe */
+.informaiton_text{margin-bottom: 40px;}
+.infomation h4{margin-bottom: 35px;}
+.info_left{width: 100%;}
+.info_right{overflow: hidden; width: 100%; text-align: center; margin-top: 40px;}
+.info_right dl{display: inline-block; margin-bottom: 0; text-align: left;}
+.info_right dl dt{margin: 8px 0;}
+.info_right dl dd{margin-top: 0; line-height: 1.4;}
+.info_right dl.dl_viewport{float: left;}
+.info_right dl.dl_period{float: right;}
+.info_right dl.dl_period dd:last-child{margin-top: 3px;}
+.page_list{width: 90%; margin: 0 auto;}
+.page_list li{font-size: 1.4rem; margin-right: 40px; margin-bottom: 10px;}
+}
+@media screen and (max-width: 640px){
+/* index.html */
+.wrapper{padding: 20px;}
+.header{width: calc(100% - 40px); height: calc(100% - 40px); font-size: 1.2rem;}
+.header nav ul li:first-child{left: -60px;}
+.header nav ul li:last-child{right: -65px;}
+.header nav ul li:first-child:hover{left: -86px;}
+.header nav ul li:last-child:hover{right: -94px;}
+.header h1 span{display: none;}
+.container_inner{width: 100%; padding: 20px 10%;}
+.main_img span{background: url(../img/main_s.png) no-repeat center; background-size: 170%;}
+.main_img span.main_img_zoom{background-size: 180%;}
+.main_text h2{font-size: 2rem; letter-spacing: 0;}
+.main_text h2 a:before, .main_text h2 a:after{height: 2px; bottom: 18%;}
+.main_text p{font-size: 1rem; letter-spacing: .3px;}
+.main_page .seemore{display: none;}
+/* aboutme.html */
+.aboutme_wrapper{width: 100%; padding: 20px 10%;}
+.hello_text h2{font-size: 2rem; letter-spacing: 0; line-height: 1.2;}
+.hello_text .text_bg{display: none;}
+.hello_text p{margin-top: 40px; font-size: 1rem;}
+.contact{margin-top: 40px;}
+.contact dl, .contact dl.dl_first{width: 100%; margin-bottom: 20px; line-height: 1;}
+.contact dl dt{display: inline-block; width: 90px;}
+.contact dl dd{display: inline-block;}
+.contact dl dd:before{content: '|'; margin-right: 20px; opacity: .5;}
+/* portfolio.html */
+.slider-wrapper{width: 100%; padding: 0 10%;}
+.portfolio_info h3{font-size: 1.8rem; line-height: 1.4; letter-spacing: -.5px; background: none;}
+.explanation, .img_left .explanation{font-size: 1rem; line-height: 1.8;}
+.portfolio_img, .img_left .portfolio_img, .portfolio_img_mobile{height: 44vw;}
+.portfolio_img, .img_left .portfolio_img{box-shadow: 4px 4px 16px rgba(0,0,0,0.1);}
+.portfolio_text > .img_myown{height: 27.5%;}
+.sub_portfolio .seemore, .sub_portfolio .img_left .seemore{width: 140px; font-size: .9rem; height: 34px; line-height: 32px; font-weight: 700; border: 3px solid #515151;}
+.sub_portfolio .seemore:hover, .sub_portfolio .img_left .seemore:hover{width: 140px;}
+.sub_portfolio .seemore:hover .arrow, .sub_portfolio .img_left .seemore:hover .arrow{width: 20px;}
+.sub_portfolio .seemore:after, .sub_portfolio .img_left .seemore:after, .sub_portfolio .seemore:before, .sub_portfolio .img_left .seemore:before{background: none;}
+.bx-prev{left: 20px;}
+.bx-next{right: 20px;}
+.close_btn{right: 5%; top: 40px;}
+.slide_pager li{font-size: .9rem;}
+/* portfolio iframe */
+.infomation{padding-top: 20%;}
+.informaiton_text{width: 90%; padding: 34% 10% 10%; margin: 0 auto; background: #fff;}
+.infomation h3{font-size: 1.8rem;}
+.infomation h4{font-size: 1rem; margin: 10px 0 25px;}
+.pf_img, .pf_img_mobile{position: absolute; width: 70%; height: 42vw; left: 0; right: 0; margin: 0 auto; top: 40px; box-shadow: 5px 5px 20px rgba(0,0,0,0.15)}
+.pf_img_mobile{height: 44vw; box-shadow: none;}
+.myown{height: 39.7vw;}
+.info_bg{display: none;}
+.page_list li{font-size: 1.2rem; margin-right: 20px; margin-bottom: 10px;}
+.container_bottom{padding-bottom: 70px;}
+.info_right dl.dl_period dd:last-child{margin-top: 2px;}
+}
+@media screen and (max-width: 480px){
+/* index.html */
+.container_inner{padding: 20px 5%;}
+.main_img{height: 200px;}
+.main_text{text-align: center; padding-top: 30px;}
+.main_text h2{font-size: 1.8rem;}
+.main_text p{font-size: .9rem;}
+/* aboutme.html */
+.aboutme_wrapper{padding: 20px 5%;}
+.hello_text{text-align: center;}
+.hello_text h2{font-size: 1.8rem;}
+.hello_text p{visibility: hidden !important; font-size: .9rem; line-height: .1; margin-top: 30px;}
+.hello_text p:before{visibility: visible; display: block; line-height: 1.7;
+content: '긍정의 힘을 믿는 웹퍼블리셔 김하연입니다! 실패에 대한 두려움, 새로운 도전에 대한 망설임, 해낼 수 있을까라는 의문. 이 모든 부정보다 강한 것은 새로운 시작에 대한 설레임과 높은 성취감으로부터 오는 긍정의 힘이라고 생각합니다. 끊임없이 도전하고 부딪치며 성장하겠습니다.';}
+.contact{margin-top: 20px;}
+.contact dl{display: inline-block; text-align: center;}
+.contact dl, .contact dl.dl_first{margin-bottom: 10px;}
+.contact dl dt, .contact dl dd{font-size: .8rem;}
+.contact dl dt{width: auto; margin-right: 8px;}
+.contact dl dd:before{content: ''; margin-right: 0;}
+.sub_aboutme .seemore{width: 70%; border: 1px solid #515151; font-size: .8rem; height: 40px; line-height: 40px; margin: 25px 15% 0;}
+.close_btn{width: 30px; height: 30px; border: 1px solid #515151;}
+/* portfolio.html */
+.slider-wrapper{padding: 0 5%;}
+.sub_portfolio .container{padding: 40px 0;}
+.portfolio_list{width: 90%; margin: 0 auto 100px;}
+.portfolio_info, .img_left .portfolio_info{padding: 0 10px;}
+.portfolio_info h3{font-size: 1.4rem;}
+.portfolio_info h4{margin: 10px 0; opacity: .7;}
+.portfolio_text, .img_left .portfolio_text{padding-bottom: 25px;}
+.explanation, .img_left .explanation{font-size: .9rem;}
+.portfolio_img, .img_left .portfolio_img{box-shadow: none;}
+.sub_portfolio .seemore, .sub_portfolio .img_left .seemore{line-height: 36px; border: 2px solid #515151; bottom: -25px;}
+.slide_pager{display: none;}
+.bx-controls-direction{height: 32px;}
+.bx-next{right: 5px; width: 20px; height: 32px;}
+.bx-prev{left: 5px; width: 20px; height: 32px;}
+/* portfolio iframe */
+.informaiton_text{padding-top: 38%;}
+.infomation h3{font-size: 1.6rem;}
+.infomation h4{font-size: 0.9rem;}
+.info_left p{font-size: 0.9rem; margin-top: -5px;}
+.info_right{margin-top: 25px;}
+.info_right dl{font-size: .8rem;}
+.container_bottom{padding-top: 60px;}
+.page_list li{width: 100%; margin: 0 0 20px; text-align: center;}
+.page_list li:before{content: 'LINK TO'; display: inline-block; font-size: .8rem; font-weight: 800; color: #515151; font-style: normal; margin-right: 15px;}
+}
+@media screen and (max-width: 320px){
+/* index.html */
+.main_text{padding-top: 15px;}
+.main_text h2{font-size: 1.4rem;}
+.main_text p{font-size: .8rem; line-height: 1.4; margin-top: 10px;}
+/* aboutme.html */
+.hello_text h2{font-size: 1.4rem;}
+.hello_text p{font-size: .8rem; margin-top: 15px;}
+.contact{margin-top: 6px;}
+.contact dl dt, .contact dl dd{letter-spacing: 0; font-size: .7rem;}
+.contact dl, .contact dl.dl_first{margin-bottom: 6px;}
+/* portfolio.html */
+.portfolio_info h3{font-size: 1.2rem;}
+.explanation, .img_left .explanation{font-size: .8rem; line-height: 1.7;}
+.sub_portfolio .seemore, .sub_portfolio .img_left .seemore{height: 30px; line-height: 30px; font-size: .8rem;}
+.close_btn{width: 25px; height: 25px;}
+/* portfolio iframe */
+.informaiton_text{padding-top: 41%;}
+.infomation h3{font-size: 1.2rem;}
+.infomation h4{font-size: 0.8rem; margin-bottom: 15px;}
+.info_left span, .info_left p{font-size: 0.8rem;}
+.info_right{margin-top: 20px;}
+.info_right dl{width: 100%; margin-bottom: 10px;}
+.info_right dl dt, .info_right dl dd{float: left;}
+.info_right dl dt{margin: 0 10px 0 0;}
+.info_right dl.dl_period{position: relative;}
+.info_right dl.dl_period dt{position: absolute; left: 0; top: 0;}
+.info_right dl.dl_period dd{margin-left: 60px;}
+}

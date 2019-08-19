@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div id="wrap_pf" class="portfolio_page">
+  <div class="container">
+    <div class="infomation">
+      <div class="informaiton_text">
+        <h3>웹접근성을 고려한 설악케이블카 웹사이트</h3>
+        <h4>SORAK CABLE CAR</h4>
+        <div class="info_left">
+          <span>ABOUT THIS WORK</span>
+          <p>설악 케이블카는 유명한 관광지이므로 웹사이트에는 다양한 연령대와 사람들이 정보를 얻기 위해 접속할 것이라 생각했습니다. 때문에 웹사이트를 이용하는 모든 사용자가 어려움 없이 원하는 정보를 손쉽게 얻을 수 있도록 웹 접근성을 고려한 웹사이트를 제작해보았습니다. 각 콘텐츠 및 메타포의 배경과 텍스트의 색상은 4.5:1 이상의 명도대비를 유지하였으며, 각 페이지의 버튼은 최소 대각선의 길이가 6mm 이상이 되도록 제작했습니다. 또한 메인 페이지의 이미지 슬라이더는 재생 및 정지 버튼을 통해 사용자가 컨트롤할 수 있으며, 버튼 Hover 시 색약자도 시각적인 변화를 인식할 수 있도록 명도대비 및 밑줄 기능을 활용했습니다. 구조 또한 최대한 간결하게 배치해 사용자가 쉽고 빠르게 정보를 습득할 수 있도록 제작했습니다.</p>
+        </div>
+        <div class="info_right">
+          <dl class="dl_viewport">
+            <dt>VIEWPORT</dt>
+            <dd>데스크탑 전용</dd>
+          </dl>
+          <dl>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </dl>
+          <dl class="dl_period">
+            <dt>제작기간</dt>
+            <dd>기획 및 디자인 4일</dd>
+            <dd>퍼블리싱 4일</dd>
+          </dl>
+        </div>
+      </div>
+      <span class="pf_img">
+        <img src="inc/img/portfolio/sorak_01.png" alt="포트폴리오 페이지 이미지"/>
+      </span>
+    </div>
+    <span class="info_bg"></span>
+  </div>
+  <div class="container_bottom">
+    <p class="page_list_text">HAVE A LOOK AT EVERY PAGE IN DETAIL!</p>
+    <ul class="page_list">
+      <li><a href="http://hayeon-kim.com/portfolio/01" target="_blank">Main Page</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/01/sub_01.html" target="_blank">Sub page 1</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/01/sub_02.html" target="_blank">Sub page 2</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+/* 전체화면 height 값 innerHeight로 */
+window.onresize = function (){
+  var h = window.innerHeight;
+  document.getElementById("wrap_pf").style.height = h+'px';
+  }
+window.onresize();
+</script>
+</body>
+</html>

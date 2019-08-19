@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div id="wrap_pf" class="portfolio_page">
+  <div class="container">
+    <div class="infomation">
+      <div class="informaiton_text">
+        <h3>HTML5 시멘틱태그 이해를 위한 웹사이트 제작</h3>
+        <h4>A practice for learning HTML5</h4>
+        <div class="info_left">
+          <span>ABOUT THIS WORK</span>
+          <p>HTML5의 시맨틱 태그를 학습하고 이해하기 위하여 가상의 웹사이트를 제작했습니다. 가능한 한 header, nav, section, article, footer 등 시맨틱 태그를 적극 활용하여 각 기능과 내용에 맞게 코딩된 시맨틱 웹 페이지를 만들고자 했습니다.
+            또한 각 페이지에는 간단한 Jquery 코드를 작성하여 팀원 소개 및 클래스 예약을 위한 팝업 등의 디테일을 추가했습니다.
+          </p>
+        </div>
+        <div class="info_right">
+          <dl class="dl_viewport">
+            <dt>VIEWPORT</dt>
+            <dd>데스크탑 전용</dd>
+          </dl>
+          <dl>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </dl>
+          <dl class="dl_period">
+            <dt>제작기간</dt>
+            <dd>기획 및 디자인 4일</dd>
+            <dd>퍼블리싱 4일</dd>
+          </dl>
+        </div>
+      </div>
+      <span class="pf_img">
+        <img src="inc/img/portfolio/sports_01.png" alt="포트폴리오 페이지 이미지"/>
+      </span>
+    </div>
+    <span class="info_bg"></span>
+  </div>
+  <div class="container_bottom">
+    <p class="page_list_text">HAVE A LOOK AT EVERY PAGE IN DETAIL!</p>
+    <ul class="page_list">
+      <li><a href="http://hayeon-kim.com/portfolio/03" target="_blank">Main Page</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/03/sub_01.html" target="_blank">Sub page 1</a></li>
+      <li><a href="http://hayeon-kim.com/portfolio/03/sub_02.html" target="_blank">Sub page 2</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+/* 전체화면 height 값 innerHeight로 */
+window.onresize = function (){
+  var h = window.innerHeight;
+  document.getElementById("wrap_pf").style.height = h+'px';
+  }
+window.onresize();
+</script>
+</body>
+</html>

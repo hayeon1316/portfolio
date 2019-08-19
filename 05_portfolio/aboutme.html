@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="inc/css/animate.css">
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+<script src="inc/js/common.js"></script>
+<script src="inc/js/wow.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub_aboutme">
+  <div class="wrapper">
+    <!-- 헤더 -->
+    <div class="header">
+      <h1><a href="index.html">HAYEON KIM</a><span></span></h1>
+      <nav>
+        <ul>
+          <li><a href="aboutme.html">ABOUT ME<span class="nav_bg"></span></a></li>
+          <li><a href="portfolio.html">PORTFOLIO<span class="nav_bg"></span></a></li>
+        </ul>
+      </nav>
+      <span class="border"></span>
+    </div>
+    <!-- //헤더 -->
+    <!-- 컨테이너 -->
+    <div class="container">
+      <div class="aboutme_wrapper">
+        <div class="hello_text wow fadeInUp">
+          <h2>What makes me<br/>never stop challenging is -</h2>
+          <span class="text_bg">Positive<br/><span>Mindset</span></span>
+          <p class="wow fadeInUp" data-wow-delay=".1s">긍정의 힘을 믿는 웹퍼블리셔 김하연입니다!<br/>실패에 대한 두려움, 새로운 도전에 대한 망설임, 해낼 수 있을까라는 의문.
+          이 모든 부정보다 강한 것은 새로운 시작에 대한 설레임과 높은 성취감으로부터 오는 긍정의 힘이라고 생각합니다.<br/>끊임없이 도전하고 부딪치며 성장하겠습니다.
+          </p>
+        </div>
+        <div class="contact wow fadeInUp" data-wow-delay=".2s">
+          <dl class="dl_first">
+            <dt>E-MAIL</dt>
+            <dd>kimma0514@gmail.com</dd>
+          </dl>
+          <dl>
+            <dt>MOBILE</dt>
+            <dd>010.4328.1316</dd>
+          </dl>
+          <dl class="dl_last">
+            <dt>ADDRESS</dt>
+            <dd>서울시 마포구 합정동</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!-- 컨테이너 -->
+  </div>
+</div>
+<script>
+/* wow js */
+wow = new WOW({
+offset:       -1000
+})
+wow.init();
+/* 윈도우 사이즈에 따라 내용 안잘리게 */
+function addListenerMulti(element, eventNames, listener) {
+  var events = eventNames.split(' ');
+  for (var i=0, iLen=events.length; i<iLen; i++) {
+    element.addEventListener(events[i], listener, false);
+  }
+} // 이벤트 두가지
+addListenerMulti(window, 'resize load', function(){
+  var wrapper = $('.aboutme_wrapper').innerHeight();
+  var container = $('.container').height();
+  if ( wrapper > container ) {
+      $('.aboutme_wrapper').addClass('aboutme_wrapper_height');
+      $('.container').addClass('container_scroll');
+      $('.bx-prev').css('left', '0');
+  } else {
+      $('.aboutme_wrapper').removeClass('aboutme_wrapper_height');
+      $('.container').removeClass('container_scroll');
+  }
+});
+</script>
+</body>
+</html>

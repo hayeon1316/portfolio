@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio of Hayeon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="inc/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="inc/css/animate.css">
+<script src="inc/js/jquery-1.11.2.min.js"></script>
+<script src="inc/js/common.js"></script>
+<script src="inc/js/theater.min.js"></script>
+<script src="inc/js/wow.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="main_page">
+  <div class="wrapper">
+    <!-- 헤더 -->
+    <div class="header">
+      <h1><a href="index.html">HAYEON KIM</a><span></span></h1>
+      <nav>
+        <ul>
+          <li><a href="aboutme.html">ABOUT ME<span class="nav_bg"></span></a></li>
+          <li><a href="portfolio.html">PORTFOLIO<span class="nav_bg"></span></a></li>
+        </ul>
+      </nav>
+      <span class="border"></span>
+    </div>
+    <!-- //헤더 -->
+    <!-- 컨테이너 -->
+    <div class="container">
+      <div class="container_inner">
+        <a class="main_img wow fadeInUp" href="#"></a>
+        <div class="main_text">
+          <h2 class="wow fadeInUp" data-wow-delay=".2s">Hello, I am <a href="aboutme.html">Hayeon</a><br/>who loves
+            <span class="actor">
+              <span id="vader" class="actor__content"></span>
+            </span>
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay=".4s">
+            <span>And I am a person who always try to see</span><br>
+            <span>the good in everything, everyone, and myself.</span><br>
+            <span>I believe that watching the good things makes me</span><br>
+            <span>optimistic and it gives me better inspiration</span><br>
+          </p>
+        </div>
+        <a class="seemore wow fadeInUp" href="aboutme.html">It's me!<span class="arrow"></span></a>
+      </div>
+    </div>
+  <!-- //컨테이너 -->
+  </div>
+</div>
+<script>
+// 타이핑 효과
+var theater = theaterJS();
+theater.
+on('type:start, erase:start', function () {
+  theater.getCurrentActor().$element.classList.add('actor__content--typing');
+}).
+on('type:end, erase:end', function () {
+  theater.getCurrentActor().$element.classList.remove('actor__content--typing');
+})
+theater.
+addActor('vader', { speed: 1, accuracy: 1 }).
+addScene('vader:Thinking positive.', 1000).
+addScene('vader:New challenge.', 1000).
+addScene('vader:Greenery.', 1000).
+addScene('vader:Photography.', 1000).
+addScene(theater.replay.bind(theater));
+
+// seemore버튼 or Hayeon 호버할 때
+$('.main_text h2 a, .seemore').hover(function(){
+  $('.main_img').toggleClass('main_img_zoom');
+});
+
+// 윈도우 Height 짧아져도 내용 안잘리게
+function addListenerMulti(element, eventNames, listener) {
+  var events = eventNames.split(' ');
+  for (var i=0, iLen=events.length; i<iLen; i++) {
+    element.addEventListener(events[i], listener, false);
+  }
+}
+// 이벤트 두가지
+addListenerMulti(window, 'resize load', function(){
+  var inner = $('.container_inner').innerHeight();
+  var container = $('.container').height();
+  if ( inner > container ) {
+      $('.container_inner').addClass('container_inner_height');
+      $('.container').addClass('container_scroll');
+  } else {
+      $('.container_inner').removeClass('container_inner_height');
+      $('.container').removeClass('container_scroll');
+  }
+});
+</script>
+</body>
+</html>
